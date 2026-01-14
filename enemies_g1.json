@@ -1,0 +1,4484 @@
+[
+  {
+    "id": "g1_red_worker_ant",
+    "name": "Red Worker Ant",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 1,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Red_Worker_Ant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Red_Worker_Ant.webp",
+    "photo": "assets/g1/creatures/photos/Red_Worker_Ant.webp",
+    "weaknesses": [
+      "spicy",
+      "stabbing"
+    ],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 120
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "stabbing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El hormiga abre sus mandíbulas y muerde rápidamente",
+        "howToAvoid": "Bloquear con un escudo o alejarse para evitar el daño",
+        "notes": "Ataque básico de ~18 de daño"
+      },
+      {
+        "name": "Mordisco cargado",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Levanta la cabeza antes de propinar una mordida potente",
+        "howToAvoid": "Esquivar hacia un lado o bloquear; tiene una animación más lenta y fácil de evitar",
+        "notes": "Ataque más fuerte (~25 de daño) que el mordisco normal"
+      }
+    ]
+  },
+  {
+    "id": "g1_black_worker_ant",
+    "name": "Black Worker Ant",
+    "game": "g1",
+    "tier": 2,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 2,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Black_Worker_Ant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Black_Worker_Ant.webp",
+    "photo": "assets/g1/creatures/photos/Black_Worker_Ant.webp",
+    "weaknesses": [
+      "spicy",
+      "stabbing"
+    ],
+    "resistances": [
+      "fresh"
+    ],
+    "health": {
+      "rating": 2,
+      "value": 425
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "stabbing",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Muerde con sus mandíbulas rápidamente",
+        "howToAvoid": "Bloquear o alejarse para reducir el daño",
+        "notes": "Ataque básico (~36 de daño)"
+      },
+      {
+        "name": "Mordisco cargado",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Se detiene un instante antes de lanzar una mordida potente",
+        "howToAvoid": "Más fácil de esquivar debido a su preparación",
+        "notes": "Ataque más fuerte (~46 de daño) que el mordisco normal"
+      }
+    ]
+  },
+  {
+    "id": "g1_ladybug",
+    "name": "Ladybug",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 3,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Ladybug.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Ladybug.webp",
+    "photo": "assets/g1/creatures/photos/Ladybug.webp",
+    "weaknesses": [
+      "busting",
+      "fresh"
+    ],
+    "resistances": [
+      "salty",
+      "spicy",
+      "stabbing"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 800
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 50
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      },
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "stabbing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "legs",
+      "susceptibleDamage": "slashing"
+    },
+    "attacks": [
+      {
+        "name": "Embestida",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Retrocede ligeramente y luego carga en línea recta a gran velocidad",
+        "howToAvoid": "Esquivar lateralmente en el momento en que cargue o bloquear con escudo (si se tiene perfecta sincronización)",
+        "notes": "Recorre gran distancia, puede aturdir al objetivo si conecta"
+      },
+      {
+        "name": "Golpe de cabeza",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Inclina su cabeza hacia atrás y luego da un cabezazo frontal",
+        "howToAvoid": "Bloquear o alejarse; el alcance es corto",
+        "notes": "Impacto frontal que puede aturdir y hacer bastante daño al jugador"
+      },
+      {
+        "name": "Embestida lateral",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Gira levemente su cuerpo y embiste de costado",
+        "howToAvoid": "Retroceder o alejarse hacia el lado opuesto de la embestida",
+        "notes": "Golpe lateral más letal que el cabezazo, suficientemente fuerte para aturdir"
+      },
+      {
+        "name": "Sacudida aérea",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Si un jugador está montado encima, la mariquita salta repentinamente para sacudirlo",
+        "howToAvoid": "No permanecer sobre el insecto cuando esté agresivo",
+        "notes": "Hace daño alto al jugador que monta sobre su espalda"
+      },
+      {
+        "name": "Rugido curativo",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Emite un fuerte rugido y brevemente brilla",
+        "howToAvoid": "N/A (no es un ataque directo, pero conviene interrumpirla golpeando rápidamente)",
+        "notes": "No daña al jugador; la mariquita se cura ~150 puntos de salud al rugir"
+      }
+    ]
+  },
+  {
+    "id": "g1_bee",
+    "name": "Bee",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 4,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Bee.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Bee.webp",
+    "photo": "assets/g1/creatures/photos/Bee.webp",
+    "weaknesses": [
+      "salty",
+      "slashing"
+    ],
+    "resistances": [
+      "busting",
+      "spicy"
+    ],
+    "health": {
+      "rating": 2,
+      "value": 300
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Picotazo aéreo",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Vuela en círculos y luego se lanza en picada con su aguijón por delante",
+        "howToAvoid": "Escuchar el zumbido acercándose y esquivar de lado antes de que clave el aguijón",
+        "notes": "Ataque principal; causa daño moderado y puede retirar rápidamente tras el golpe"
+      },
+      {
+        "name": "Aguijonazo descendente",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Se cierne sobre el jugador y clava su aguijón hacia abajo desde corta distancia",
+        "howToAvoid": "Bloquear en el momento justo o apartarse hacia un lado",
+        "notes": "Golpe vertical; si se falla el bloqueo puede infligir daño considerable"
+      }
+    ]
+  },
+  {
+    "id": "g1_firefly",
+    "name": "Firefly",
+    "game": "g1",
+    "tier": 2,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 5,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Firefly.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Firefly.webp",
+    "photo": "assets/g1/creatures/photos/Firefly.webp",
+    "weaknesses": [
+      "busting",
+      "spicy"
+    ],
+    "resistances": [
+      "salty",
+      "slashing"
+    ],
+    "health": {
+      "rating": 2,
+      "value": 180
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Proyectil de baba luminosa",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "La luciérnaga se eleva ligeramente y expulsa una bola de líquido verde brillante",
+        "howToAvoid": "Mantenerse en movimiento lateral para que el proyectil falle",
+        "notes": "El glóbulo de baba explota al contacto con el suelo, dejando un charco que puede ralentizar o dañar ligeramente"
+      },
+      {
+        "name": "Cabezazo",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Emite un destello de luz y arremete de frente con la cabeza",
+        "howToAvoid": "Bloquear o alejarse; el destello anticipa la embestida",
+        "notes": "Ataque cercano de bajo daño, usado si el jugador está muy cerca"
+      }
+    ]
+  },
+  {
+    "id": "g1_sickly_roly_poly",
+    "name": "Sickly Roly Poly",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 6,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Sickly_Roly_Poly.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Sickly_Roly_Poly.webp",
+    "photo": "assets/g1/creatures/photos/Sickly_Roly_Poly.webp",
+    "weaknesses": [
+      "salty",
+      "slashing"
+    ],
+    "resistances": [
+      "busting",
+      "fresh"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 700
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "fresh",
+        "bonusPct": 25
+      },
+      {
+        "type": "busting",
+        "bonusPct": 50
+      }
+    ],
+    "weakPoint": {
+      "part": "gut",
+      "susceptibleDamage": "stabbing"
+    },
+    "attacks": [
+      {
+        "name": "Rodar defensivo",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Se enrolla formando una bola cuando recibe muchos golpes seguidos",
+        "howToAvoid": "Alejarse cuando comience a enrollarse; esperar a que salga de su forma de bola",
+        "notes": "Mientras está enrollado recibe significativamente menos daño y regenera salud lentamente"
+      },
+      {
+        "name": "Embestida giratoria",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Desenrolla su cuerpo bruscamente e impulsa su caparazón hacia adelante",
+        "howToAvoid": "Bloquear con un escudo resistente o esquivar; el ataque cubre poca distancia",
+        "notes": "Daño moderado; suele usarlo tras desenrollarse"
+      },
+      {
+        "name": "Golpe de cuerpo",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Se abalanza con su cuerpo blindado directamente contra el jugador",
+        "howToAvoid": "Mantener distancia o bloquear; es relativamente lento",
+        "notes": "Aprovecha su peso para infligir daño contundente"
+      }
+    ]
+  },
+  {
+    "id": "g1_roly_poly",
+    "name": "Roly Poly",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 7,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Roly_Poly.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Roly_Poly.webp",
+    "photo": "assets/g1/creatures/photos/Roly_Poly.webp",
+    "weaknesses": [
+      "salty",
+      "slashing"
+    ],
+    "resistances": [
+      "busting",
+      "fresh"
+    ],
+    "health": {
+      "rating": 4,
+      "value": 950
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "fresh",
+        "bonusPct": 25
+      },
+      {
+        "type": "busting",
+        "bonusPct": 50
+      }
+    ],
+    "weakPoint": {
+      "part": "gut",
+      "susceptibleDamage": "stabbing"
+    },
+    "attacks": [
+      {
+        "name": "Rodar defensivo",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Se enrolla completamente en su caparazón tras recibir daño significativo",
+        "howToAvoid": "No atacar mientras esté enrollada; esperar a que vuelva a desenrollarse",
+        "notes": "En forma de bola reduce drásticamente el daño recibido y se cura lentamente"
+      },
+      {
+        "name": "Embestida desenrollada",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Sale de su forma de bola con un impulso hacia adelante",
+        "howToAvoid": "Esquivar en el momento en que se desenrolla para evitar el golpe",
+        "notes": "Ataque de apertura tras su defensa; puede aturdir si impacta plenamente"
+      },
+      {
+        "name": "Arremetida corpulenta",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Arremete de frente usando todo su peso blindado",
+        "howToAvoid": "Bloquear con armadura pesada o esquivar lateralmente",
+        "notes": "Golpe contundente de alto daño; difícil de detener sin bloqueo perfecto"
+      }
+    ]
+  },
+  {
+    "id": "g1_moth",
+    "name": "Moth",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 8,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Moth.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Moth.webp",
+    "photo": "assets/g1/creatures/photos/Moth.webp",
+    "weaknesses": [
+      "busting",
+      "spicy"
+    ],
+    "resistances": [
+      "salty",
+      "slashing"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 600
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Disparo de polvo",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Agita sus alas liberando un polvillo brillante que lanza en dirección del jugador",
+        "howToAvoid": "Mantenerse en movimiento para evitar la nube de polvo",
+        "notes": "El polvo causa ralentización y daño leve continuado si alcanza al jugador"
+      },
+      {
+        "name": "Picotazo con vuelo",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Desciende en picada intentando clavar sus piezas bucales",
+        "howToAvoid": "Esquivar al ver que comienza la picada; su trayectoria es relativamente recta",
+        "notes": "Ataque principal cuando el jugador está debajo; daño moderado"
+      },
+      {
+        "name": "Aleteo cortante",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Vuela cerca del suelo y golpea con el borde de sus alas",
+        "howToAvoid": "Agacharse o apartarse rápidamente del alcance de las alas",
+        "notes": "Puede causar hemorragia menor debido a los bordes afilados de las alas"
+      }
+    ]
+  },
+  {
+    "id": "g1_red_soldier_ant",
+    "name": "Red Soldier Ant",
+    "game": "g1",
+    "tier": 1,
+    "danger": "media",
+    "isBoss": false,
+    "order": 9,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Red_Soldier_Ant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Red_Soldier_Ant.webp",
+    "photo": "assets/g1/creatures/photos/Red_Soldier_Ant.webp",
+    "weaknesses": [
+      "busting",
+      "spicy"
+    ],
+    "resistances": [],
+    "health": {
+      "rating": 2,
+      "value": 225
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco doble",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Chasquea sus mandíbulas dos veces en rápida sucesión",
+        "howToAvoid": "Bloquear ambos mordiscos o moverse fuera de su corto alcance",
+        "notes": "Ataque básico en combo de dos mordidas consecutivas"
+      },
+      {
+        "name": "Mandíbulas cargadas",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Retrocede ligeramente levantando la cabeza, luego lanza una mordida potente",
+        "howToAvoid": "Esquivar hacia un lado antes de que alcance al jugador",
+        "notes": "Mordisco fuerte que puede causar más daño; animación más telegráfica que el ataque normal"
+      }
+    ]
+  },
+  {
+    "id": "g1_lawn_mite",
+    "name": "Lawn Mite",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 10,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Lawn_Mite.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Lawn_Mite.webp",
+    "photo": "assets/g1/creatures/photos/Lawn_Mite.webp",
+    "weaknesses": [
+      "busting",
+      "fresh"
+    ],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 36
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Salto mordedor",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El ácaro se agacha brevemente y luego salta hacia el jugador con la boca abierta",
+        "howToAvoid": "Apartarse rápidamente del punto de aterrizaje o bloquear justo cuando impacta",
+        "notes": "Único ataque del ácaro; causa poco daño pero pueden venir en grupos"
+      }
+    ]
+  },
+  {
+    "id": "g1_larva",
+    "name": "Larva",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 11,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Larva.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Larva.webp",
+    "photo": "assets/g1/creatures/photos/Larva.webp",
+    "weaknesses": [
+      "busting",
+      "spicy"
+    ],
+    "resistances": [
+      "salty"
+    ],
+    "health": {
+      "rating": 1,
+      "value": 80
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Embestida voraz",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La larva se arquea hacia atrás y luego se lanza hacia adelante con sus mandíbulas abiertas",
+        "howToAvoid": "Esquivar lateralmente en el momento del lanzamiento o bloquear",
+        "notes": "Ataque principal de la larva; daño bajo a moderado"
+      },
+      {
+        "name": "Ataque frenético",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Después de la embestida fallida, agita su cuerpo y muerde repetidamente de forma errática",
+        "howToAvoid": "Tomar distancia hasta que termine su arremetida de mordiscos",
+        "notes": "Puede dar 2-3 mordiscos rápidos si el jugador permanece cerca"
+      }
+    ]
+  },
+  {
+    "id": "g1_ruz_t",
+    "name": "RUZ.T",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 12,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_RUZ.T.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_RUZ.T.webp",
+    "photo": "assets/g1/creatures/photos/RUZ.T.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "slashing",
+      "spicy"
+    ],
+    "health": {
+      "rating": 1,
+      "value": 100
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Descarga eléctrica",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "El RUZ.T apunta con su antena y emite una chispa eléctrica hacia el objetivo",
+        "howToAvoid": "Moverse constantemente para que la chispa falle; usar obstáculos del laboratorio como cubierta",
+        "notes": "Causa daño por electricidad a distancia; menos potente que el TAYZ.T"
+      },
+      {
+        "name": "Golpe táser",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Balancea su brazo equipado con un electrodo cercano al jugador",
+        "howToAvoid": "Retroceder fuera de su corto alcance o bloquear el golpe",
+        "notes": "Ataque de corto alcance inspirado en los TAYZ.T; puede aturdir brevemente si impacta"
+      }
+    ]
+  },
+  {
+    "id": "g1_water_flea",
+    "name": "Water Flea",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 13,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Water_Flea.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Water_Flea.webp",
+    "photo": "assets/g1/creatures/photos/Water_Flea.webp",
+    "weaknesses": [
+      "slashing",
+      "spicy"
+    ],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 32
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "gut",
+      "susceptibleDamage": "stabbing"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco acuático",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La pulga nada rápidamente hacia el jugador y muerde con sus piezas bucales",
+        "howToAvoid": "Nadar alejándose en cuanto inicie la acometida o bloquear con arma submarina",
+        "notes": "Ataque simple; bajo daño. Puede ser difícil de evadir debido a la movilidad bajo el agua"
+      }
+    ]
+  },
+  {
+    "id": "g1_orb_weaver_jr",
+    "name": "Orb Weaver Jr",
+    "game": "g1",
+    "tier": 1,
+    "danger": "media",
+    "isBoss": false,
+    "order": 14,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Orb_Weaver_Jr.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Orb_Weaver_Jr.webp",
+    "photo": "assets/g1/creatures/photos/Orb_Weaver_Jr.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 2,
+      "value": 125
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordida triple",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La arañita levanta sus patas delanteras y ejecuta una secuencia rápida de tres mordidas",
+        "howToAvoid": "Retroceder para salir de rango o bloquear rápidamente cada mordisco",
+        "notes": "Combo de tres mordidas consecutivas; puede causar veneno leve si no se bloquea"
+      },
+      {
+        "name": "Salto arácnido",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Salta hacia el jugador intentando morder al caer",
+        "howToAvoid": "Esquivar lateralmente cuando ves que salta",
+        "notes": "Cubre distancia corta; usado para cerrar la distancia"
+      },
+      {
+        "name": "Disparo de telaraña",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Inclina el abdomen y lanza un proyectil de telaraña pegajosa",
+        "howToAvoid": "Moverse continuamente; si te pega, corta la telaraña rápidamente con un arma",
+        "notes": "La telaraña inmoviliza al jugador brevemente si acierta, dejándolo vulnerable"
+      }
+    ]
+  },
+  {
+    "id": "g1_spiderling",
+    "name": "Spiderling",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 15,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Spiderling.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Spiderling.webp",
+    "photo": "assets/g1/creatures/photos/Spiderling.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 20
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco venenoso",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La pequeña araña corre hacia ti y asesta un mordisco rápido",
+        "howToAvoid": "Un solo golpe de arma suele matarla antes de que alcance a morder; de lo contrario, bloquear o apartarse",
+        "notes": "Puede aplicar un veneno muy leve al jugador; bajo daño individual, pero las arañitas suelen atacar en grupo"
+      }
+    ]
+  },
+  {
+    "id": "g1_black_soldier_ant",
+    "name": "Black Soldier Ant",
+    "game": "g1",
+    "tier": 1,
+    "danger": "media",
+    "isBoss": false,
+    "order": 16,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Black_Soldier_Ant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Black_Soldier_Ant.webp",
+    "photo": "assets/g1/creatures/photos/Black_Soldier_Ant.webp",
+    "weaknesses": [
+      "busting",
+      "spicy"
+    ],
+    "resistances": [
+      "fresh"
+    ],
+    "health": {
+      "rating": 2,
+      "value": 300
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "fresh",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco doble",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Muerde dos veces en rápida sucesión con sus poderosas mandíbulas",
+        "howToAvoid": "Bloquear ambas mordidas o alejarse tras la primera mordida para evitar la segunda",
+        "notes": "Ataque estándar similar al de la hormiga soldado roja pero con algo más de daño"
+      },
+      {
+        "name": "Agarre con mandíbulas",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Agacha la cabeza y luego lanza un solo pero potente mordisco",
+        "howToAvoid": "Esquivar hacia un lado en el momento del ataque o bloquear con buen tiempo",
+        "notes": "Mordida más fuerte; puede romper la guardia de un jugador si este ya estaba debilitado"
+      }
+    ]
+  },
+  {
+    "id": "g1_tayz_t",
+    "name": "TAYZ.T",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 17,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_TAYZ.T.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_TAYZ.T.webp",
+    "photo": "assets/g1/creatures/photos/TAYZ.T.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "slashing",
+      "spicy"
+    ],
+    "health": {
+      "rating": 2,
+      "value": 300
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Rayo láser",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Sus ojos se iluminan brevemente antes de disparar un rayo de energía verde",
+        "howToAvoid": "Moverse lateralmente o saltar para salir de la trayectoria del rayo",
+        "notes": "El rayo recorre distancia en línea recta y causa daño energético moderado"
+      },
+      {
+        "name": "Golpe eléctrico",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Levanta uno de sus brazos cargado de electricidad y asesta un golpe descendente",
+        "howToAvoid": "Bloquear con escudo (provoca aturdimiento parcial) o esquivar hacia atrás",
+        "notes": "Si impacta, puede aplicar una breve descarga que entumece al jugador"
+      }
+    ]
+  },
+  {
+    "id": "g1_arc_r",
+    "name": "ARC.R",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 18,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_ARC.R.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_ARC.R.webp",
+    "photo": "assets/g1/creatures/photos/ARC.R.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "slashing",
+      "spicy"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 400
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Carga rodante",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Se transforma en esfera y rueda rápidamente hacia el jugador",
+        "howToAvoid": "Apartarse de la trayectoria; tras rodar quedará vulnerable unos segundos",
+        "notes": "Ataque de aproximación; si golpea causa daño y puede derribar al jugador"
+      },
+      {
+        "name": "Explosión eléctrica",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Tras rodar cerca del jugador, se detiene y emite un destello antes de autodestruirse parcialmente",
+        "howToAvoid": "Alejarse rápidamente cuando comience a brillar; la explosión tiene un radio moderado",
+        "notes": "Libera una descarga explosiva que inflige alto daño de área; el ARC.R queda destruido luego de esto"
+      }
+    ]
+  },
+  {
+    "id": "g1_mosquito",
+    "name": "Mosquito",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 19,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Mosquito.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Mosquito.webp",
+    "photo": "assets/g1/creatures/photos/Mosquito.webp",
+    "weaknesses": [
+      "salty",
+      "slashing"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 2,
+      "value": 190
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Picotazo drenante",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El mosquito vuela en zigzag hacia ti y clava su probóscide (pico) en un rápido movimiento",
+        "howToAvoid": "Tratar de golpearlo antes de que alcance o bloquear justo cuando embiste",
+        "notes": "Si conecta, además del daño recupera una pequeña porción de salud para el mosquito"
+      },
+      {
+        "name": "Ataque triple",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Después de un picotazo inicial, realiza hasta dos estocadas adicionales en sucesión",
+        "howToAvoid": "Mantener el bloqueo tras el primer picotazo o seguir esquivando lateralmente",
+        "notes": "Un mosquito puede encadenar hasta 3 picotazos, especialmente cuando está agresivo"
+      }
+    ]
+  },
+  {
+    "id": "g1_infected_weevil",
+    "name": "Infected Weevil",
+    "game": "g1",
+    "tier": 2,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 20,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Infected_Weevil.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Weevil.webp",
+    "photo": "assets/g1/creatures/photos/Infected_Weevil.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "fresh"
+    ],
+    "health": {
+      "rating": 1,
+      "value": 60
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "fresh",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Carga explosiva",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El gorgojo infectado emite un sonido sibilante y corre directamente hacia el jugador",
+        "howToAvoid": "Tomar distancia o eliminarlo antes de que llegue; si se acerca demasiado, bloquear la explosión",
+        "notes": "Al contacto o tras unos segundos, explota liberando esporas; la explosión causa daño de área y deja nubes tóxicas"
+      }
+    ]
+  },
+  {
+    "id": "g1_infected_mite",
+    "name": "Infected Mite",
+    "game": "g1",
+    "tier": 2,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 21,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Infected_Mite.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Mite.webp",
+    "photo": "assets/g1/creatures/photos/Infected_Mite.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "fresh"
+    ],
+    "health": {
+      "rating": 1,
+      "value": 40
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "fresh",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Salto explosivo",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El ácaro se inflama con esporas y salta hacia el jugador",
+        "howToAvoid": "Retroceder o apartarse antes de que alcance; si llega, bloquear la explosión",
+        "notes": "Detona al impactar o al morir, causando una pequeña explosión de esporas infectadas"
+      }
+    ]
+  },
+  {
+    "id": "g1_infected_ladybug",
+    "name": "Infected Ladybug",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 22,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Infected_Ladybug.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Ladybug.webp",
+    "photo": "assets/g1/creatures/photos/Infected_Ladybug.webp",
+    "weaknesses": [
+      "fresh"
+    ],
+    "resistances": [
+      "salty",
+      "slashing",
+      "spicy"
+    ],
+    "health": {
+      "rating": 4,
+      "value": 800
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "salty",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "legs",
+      "susceptibleDamage": "slashing"
+    },
+    "attacks": [
+      {
+        "name": "Carga explosiva",
+        "tags": [
+          "aoe"
+        ],
+        "tell": "La mariquita infectada carga similar a una normal, pero su cuerpo emite brillos naranjas de las esporas",
+        "howToAvoid": "Esquivar la embestida inicial; tras impactar o al recibir suficiente daño, alejarse para evitar la explosión subsiguiente",
+        "notes": "Luego de embestir, puede detonar en una explosión de mildiú que causa gran daño de área"
+      },
+      {
+        "name": "Pisotón tóxico",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Si el jugador está muy cerca, se yergue ligeramente y golpea el suelo con sus patas delanteras liberando esporas",
+        "howToAvoid": "Alejarse cuando la veas levantarse; las esporas tendrán corto alcance alrededor de ella",
+        "notes": "El impacto cercano causa daño y las esporas generadas infligen efecto de veneno/infección en área"
+      }
+    ]
+  },
+  {
+    "id": "g1_infected_larva",
+    "name": "Infected Larva",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 23,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Infected_Larva.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Larva.webp",
+    "photo": "assets/g1/creatures/photos/Infected_Larva.webp",
+    "weaknesses": [
+      "busting",
+      "spicy"
+    ],
+    "resistances": [
+      "salty"
+    ],
+    "health": {
+      "rating": 1,
+      "value": 80
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Embestida fúngica",
+        "tags": [
+          "aoe"
+        ],
+        "tell": "La larva infectada carga hacia el jugador emanando esporas de su lomo",
+        "howToAvoid": "Esquivar la embestida; tras unos segundos de contacto o al morir, aléjate para esquivar la explosión fúngica",
+        "notes": "Al morir o impactar fuertemente, explota liberando esporas tóxicas en área"
+      }
+    ]
+  },
+  {
+    "id": "g1_infected_gnat",
+    "name": "Infected Gnat",
+    "game": "g1",
+    "tier": 2,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 24,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Infected_Gnat.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Gnat.webp",
+    "photo": "assets/g1/creatures/photos/Infected_Gnat.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "fresh"
+    ],
+    "health": {
+      "rating": 1,
+      "value": 30
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "fresh",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Explosión en picada",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El mosquito infectado vuela en círculos y de pronto cae en picado brillando intensamente",
+        "howToAvoid": "Alejarse del punto donde caerá; si se acerca demasiado, bloquear la explosión",
+        "notes": "Se inmola al contacto, explotando en esporas. Daño muy bajo pero puede desorientar"
+      }
+    ]
+  },
+  {
+    "id": "g1_stinkbug",
+    "name": "Stinkbug",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 25,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Stinkbug.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Stinkbug.webp",
+    "photo": "assets/g1/creatures/photos/Stinkbug.webp",
+    "weaknesses": [
+      "salty",
+      "slashing"
+    ],
+    "resistances": [
+      "busting",
+      "spicy"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 340
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "gut",
+      "susceptibleDamage": "stabbing"
+    },
+    "attacks": [
+      {
+        "name": "Nube tóxica",
+        "tags": [
+          "aoe"
+        ],
+        "tell": "El chinche levanta ligeramente el abdomen y emite un sonido de chisporroteo antes de liberar gas",
+        "howToAvoid": "Salir rápidamente del área verde que rodea al insecto cuando comience a liberar la nube",
+        "notes": "Crea una nube de gas venenoso que inflige daño continuo y puede asfixiar; la nube persiste unos segundos en el lugar"
+      },
+      {
+        "name": "Embate corporal",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Carga torpemente hacia el jugador con su cuerpo robusto",
+        "howToAvoid": "Esquivar a un lado; su movimiento es algo lento y predecible",
+        "notes": "Si golpea, causa daño moderado. Suele hacerlo para alejar al jugador antes de usar la nube tóxica"
+      }
+    ]
+  },
+  {
+    "id": "g1_orb_weaver",
+    "name": "Orb Weaver",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 26,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Orb_Weaver.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Orb_Weaver.webp",
+    "photo": "assets/g1/creatures/photos/Orb_Weaver.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 300
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Combo de mordidas",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Levanta las patas delanteras y realiza una secuencia de hasta tres mordiscos rápidos",
+        "howToAvoid": "Permanecer en guardia para bloquear cada mordida, o alejarse fuera de su alcance hasta que termine el combo",
+        "notes": "Ataque principal; si no se interrumpe puede morder 2-3 veces seguidas"
+      },
+      {
+        "name": "Salto con mordida",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Recula ligeramente y luego salta hacia adelante intentando morder",
+        "howToAvoid": "Esquivar en el momento en que salta o bloquear justo al aterrizar",
+        "notes": "Le permite cerrar distancia; puede sorprender si se está distraído"
+      },
+      {
+        "name": "Disparo de telaraña",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Eleva el abdomen y lanza un proyectil de seda pegajosa hacia el jugador",
+        "howToAvoid": "Mantenerse en movimiento lateral; si la telaraña impacta, liberarse rápidamente cortándola",
+        "notes": "Inmoviliza al jugador brevemente si acierta, dejándolo vulnerable a las siguientes mordidas"
+      }
+    ]
+  },
+  {
+    "id": "g1_diving_bell_spider",
+    "name": "Diving Bell Spider",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 27,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Diving_Bell_Spider.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Diving_Bell_Spider.webp",
+    "photo": "assets/g1/creatures/photos/Diving_Bell_Spider.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 2,
+      "value": 175
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordida acuática",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Nada rápidamente hacia el jugador y ataca con sus colmillos bajo el agua",
+        "howToAvoid": "Nadar hacia arriba o abajo para salir de su trayectoria; puede ser bloqueado con la daga submarina",
+        "notes": "Ataque básico; causa daño moderado y aplica efecto de veneno bajo el agua"
+      },
+      {
+        "name": "Emboscada desde abajo",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Se oculta en vegetación submarina y de repente surge debajo del jugador",
+        "howToAvoid": "Mantenerse en constante movimiento en el agua y vigilar el fondo cercano",
+        "notes": "Puede sorprender al jugador; primer ataque al descubrirte suele ser este embate repentino"
+      }
+    ]
+  },
+  {
+    "id": "g1_wolf_spider",
+    "name": "Wolf Spider",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 28,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Wolf_Spider.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Wolf_Spider.webp",
+    "photo": "assets/g1/creatures/photos/Wolf_Spider.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 4,
+      "value": 850
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Combo de mordidas feroz",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La araña lanza una rápida sucesión de hasta 3 mordidas con sus colmillos venenosos",
+        "howToAvoid": "Bloquear cada mordida en secuencia con buen tiempo; si no, retroceder rápidamente fuera de alcance",
+        "notes": "Cada mordida inflige daño alto y veneno potente; bloqueos imperfectos aún aplicarán veneno"
+      },
+      {
+        "name": "Zarpazo",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Eleva abruptamente una de sus patas delanteras y la arremete hacia el jugador",
+        "howToAvoid": "Esquivar lateralmente antes de que la pata alcance al jugador",
+        "notes": "Golpe único que puede sorprender durante el combo; daño moderado, puede aturdir unos instantes"
+      },
+      {
+        "name": "Salto aplastante",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Reúne fuerza y salta en arco hacia la posición del jugador",
+        "howToAvoid": "Rodar o correr fuera del punto de aterrizaje; mantenerse en movimiento cuando salta",
+        "notes": "Si cae sobre el jugador, inflige gran daño; su impacto puede sacudir la cámara y desorientar"
+      },
+      {
+        "name": "Emboscada nocturna",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Cuando está oculta (especialmente de noche), ataca sin señales previas desde la oscuridad",
+        "howToAvoid": "Mantener la guardia alta en zonas de robles o cuevas por la noche; usar antorcha para revelar su posición",
+        "notes": "No es un ataque distinto sino la ausencia de aviso; la araña puede iniciar el combate con su combo sin que el jugador la vea venir"
+      }
+    ]
+  },
+  {
+    "id": "g1_bombardier_beetle",
+    "name": "Bombardier Beetle",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 29,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Bombardier_Beetle.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Bombardier_Beetle.webp",
+    "photo": "assets/g1/creatures/photos/Bombardier_Beetle.webp",
+    "weaknesses": [
+      "busting",
+      "fresh"
+    ],
+    "resistances": [
+      "slashing",
+      "spicy"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 300
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "gut",
+      "susceptibleDamage": "stabbing"
+    },
+    "attacks": [
+      {
+        "name": "Ráfaga corrosiva",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Levanta su abdomen y expulsa una ráfaga de líquido verde ácido en arco hacia el jugador",
+        "howToAvoid": "Observar la trayectoria en arco e intentar salir del área donde caerá el ácido, o refugiarse bajo un techo/hoja",
+        "notes": "El ácido salpica al suelo en un área, causando daño continuo a quien permanezca en el charco corrosivo"
+      },
+      {
+        "name": "Chorro directo",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Apunta su abdomen directamente hacia el jugador y escupe un chorro de ácido más concentrado",
+        "howToAvoid": "Esquivar lateralmente para evitar el chorro dirigido",
+        "notes": "Más preciso que la ráfaga; deja un pequeño charco corrosivo en el punto de impacto"
+      },
+      {
+        "name": "Embestida frontal",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Carga unos pasos con su cuerpo grande hacia el jugador",
+        "howToAvoid": "Retroceder o esquivar a un lado; la carga es relativamente lenta",
+        "notes": "Usado si el jugador está cerca; daño moderado y puede empujar al jugador"
+      }
+    ]
+  },
+  {
+    "id": "g1_fire_worker_ant",
+    "name": "Fire Worker Ant",
+    "game": "g1",
+    "tier": 2,
+    "danger": "media",
+    "isBoss": false,
+    "order": 30,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Fire_Worker_Ant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Fire_Worker_Ant.webp",
+    "photo": "assets/g1/creatures/photos/Fire_Worker_Ant.webp",
+    "weaknesses": [
+      "busting",
+      "fresh"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 350
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco ácido",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La hormiga muerde e inyecta un ácido débil con sus mandíbulas",
+        "howToAvoid": "Bloquear o esquivar como un mordisco normal",
+        "notes": "Similar al ataque de otras hormigas, pero causa un ligero efecto de quemadura por ácido adicional"
+      },
+      {
+        "name": "Llamarada de ira",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Cuando su salud es baja, sus ojos brillan rojos y ataca frenéticamente",
+        "howToAvoid": "En ese estado, mantener mayor distancia y atacar con armas de largo alcance",
+        "notes": "No es un ataque en sí, sino un estado en el que sus mordidas se encadenan más rápido y pueden hacer más daño"
+      }
+    ]
+  },
+  {
+    "id": "g1_fire_soldier_ant",
+    "name": "Fire Soldier Ant",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 31,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Fire_Soldier_Ant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Fire_Soldier_Ant.webp",
+    "photo": "assets/g1/creatures/photos/Fire_Soldier_Ant.webp",
+    "weaknesses": [
+      "busting",
+      "fresh"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 450
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordida corrosiva",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La hormiga soldado abre sus poderosas mandíbulas y muerde expulsando ácido al mismo tiempo",
+        "howToAvoid": "Bloquear la mordida; aunque se bloquee, retroceder para evitar el ácido residual",
+        "notes": "La mordida hace daño elevado y deja pequeñas gotas de ácido que continúan dañando unos instantes en el área"
+      },
+      {
+        "name": "Rugido de ferocidad",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Emite un chasquido o rugido agudo que inspira a otras hormigas cercanas",
+        "howToAvoid": "N/A (no es evitable, pero alejarse de grupos de hormigas reduce su efecto)",
+        "notes": "Tras el rugido, todas las hormigas de fuego cercanas (incluida ella) ganan un breve aumento de daño y velocidad de ataque"
+      }
+    ]
+  },
+  {
+    "id": "g1_dust_mite",
+    "name": "Dust Mite",
+    "game": "g1",
+    "tier": 3,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 32,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Dust_Mite.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Dust_Mite.webp",
+    "photo": "assets/g1/creatures/photos/Dust_Mite.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 1,
+      "value": 60
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Disparo de polvo",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "El ácaro estornuda expulsando una nubecilla de polvo en dirección al jugador",
+        "howToAvoid": "Moverse fuera de la trayectoria de la nube; mantener distancia",
+        "notes": "El polvo reduce temporalmente la visibilidad y puede infligir fatiga (ralentiza la regeneración de aguante)"
+      },
+      {
+        "name": "Mordisco irritante",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Corre y muerde rápidamente al jugador",
+        "howToAvoid": "Un golpe fuerte suele matarlo antes; si muerde, retroceder para evitar múltiples mordidas",
+        "notes": "Causa poco daño pero aplica irritación (debuff menor al ataque del jugador por corto tiempo)"
+      }
+    ]
+  },
+  {
+    "id": "g1_ladybird_larva",
+    "name": "Ladybird Larva",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 33,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Ladybird_Larva.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Ladybird_Larva.webp",
+    "photo": "assets/g1/creatures/photos/Ladybird_Larva.webp",
+    "weaknesses": [
+      "busting",
+      "spicy"
+    ],
+    "resistances": [
+      "salty"
+    ],
+    "health": {
+      "rating": 2,
+      "value": 100
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco cargado",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La larva echa hacia atrás la cabeza y luego la lanza hacia adelante mordiendo con fuerza",
+        "howToAvoid": "Esquivar al ver que lanza la cabeza o bloquear justo antes del impacto",
+        "notes": "Ataque más potente que el de una larva común, puede quitar una cantidad apreciable de salud"
+      },
+      {
+        "name": "Chirrido intimidante",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Emite un chirrido agudo cuando está rodeada o en peligro",
+        "howToAvoid": "N/A (el sonido alcanza al jugador si está cerca)",
+        "notes": "El chirrido reduce brevemente la defensa del jugador (efecto de intimidación) haciendo que reciba más daño por unos segundos"
+      }
+    ]
+  },
+  {
+    "id": "g1_antlion",
+    "name": "Antlion",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 34,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Antlion.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Antlion.webp",
+    "photo": "assets/g1/creatures/photos/Antlion.webp",
+    "weaknesses": [
+      "busting",
+      "spicy"
+    ],
+    "resistances": [
+      "salty"
+    ],
+    "health": {
+      "rating": 4,
+      "value": 500
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Emboscada de arena",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Permanece enterrado y de repente surge bajo el jugador con sus mandíbulas abiertas",
+        "howToAvoid": "No permanecer quieto en la arena; al ver movimiento de arena, saltar o esquivar inmediatamente",
+        "notes": "Ataque sorpresa inicial; alto daño si conecta. Suele iniciar el combate así"
+      },
+      {
+        "name": "Disparo de arena",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Desde su hoyo, lanza un chorro de arena hacia el jugador",
+        "howToAvoid": "Mantenerse móvil; la arena proyectada tiene trayectoria recta pero puede sorprender a distancia",
+        "notes": "El golpe de arena causa daño menor pero puede cegar momentáneamente al jugador (efecto de arena en ojos)"
+      },
+      {
+        "name": "Mordida severa",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Si el jugador está cerca del borde de su hoyo, lanza una mordida lateral desde la arena",
+        "howToAvoid": "No acercarse demasiado al borde; si ocurre, bloquear o alejarse rápidamente",
+        "notes": "Puede arrastrar ligeramente al jugador hacia el hoyo con este ataque. Daño alto"
+      }
+    ]
+  },
+  {
+    "id": "g1_termite_worker",
+    "name": "Termite Worker",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 35,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Termite_Worker.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Termite_Worker.webp",
+    "photo": "assets/g1/creatures/photos/Termite_Worker.webp",
+    "weaknesses": [
+      "busting",
+      "spicy"
+    ],
+    "resistances": [
+      "salty"
+    ],
+    "health": {
+      "rating": 2,
+      "value": 160
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Chorro de saliva",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "La termita apunta con la cabeza y expulsa un escupitajo verdoso hacia el jugador",
+        "howToAvoid": "Esquivar lateralmente; el escupitajo es rápido pero de trayectoria visible",
+        "notes": "La saliva ácida puede reducir temporalmente la defensa del jugador (efecto corrosivo leve)"
+      },
+      {
+        "name": "Mordisco de termita",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Muerde con sus mandíbulas en tijera repetidamente",
+        "howToAvoid": "Bloquear o retroceder fuera de su alcance corto",
+        "notes": "Puede realizar 1-2 mordidas rápidas; no muy dañinas individualmente pero peligrosas en grupo"
+      }
+    ]
+  },
+  {
+    "id": "g1_termite_soldier",
+    "name": "Termite Soldier",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 36,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Termite_Soldier.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Termite_Soldier.webp",
+    "photo": "assets/g1/creatures/photos/Termite_Soldier.webp",
+    "weaknesses": [
+      "busting",
+      "spicy"
+    ],
+    "resistances": [
+      "salty"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 200
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Salivazo corrosivo",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Igual que el obrero, escupe pero su saliva es más abundante y va en una línea más recta",
+        "howToAvoid": "Bloquear con escudo (parcialmente neutraliza el ácido) o esquivar; cuidado con múltiples soldados escupiendo a la vez",
+        "notes": "Causa más daño que el de obrera y puede reducir durabilidad del escudo/armadura por su acidez"
+      },
+      {
+        "name": "Mordida potente",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Abre más sus mandíbulas y muerde con fuerza al jugador",
+        "howToAvoid": "Intentar un perfect block o mantenerse fuera de su corto alcance",
+        "notes": "Más daño que las mordidas de obrera; puede aplicar un leve efecto de sangrado debido a las mandíbulas aserradas"
+      }
+    ]
+  },
+  {
+    "id": "g1_termite_king",
+    "name": "Termite King",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 37,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Termite_King.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Termite_King.webp",
+    "photo": "assets/g1/creatures/photos/Termite_King.webp",
+    "weaknesses": [
+      "busting",
+      "spicy"
+    ],
+    "resistances": [
+      "salty"
+    ],
+    "health": {
+      "rating": 4,
+      "value": 600
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Ráfaga de polillas",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "El Rey emite un chillido convocando una nube de termitas diminutas que salen volando de su espalda hacia el jugador",
+        "howToAvoid": "Retroceder y usar un arma a distancia o de área para eliminar la nube de pequeñas termitas voladoras",
+        "notes": "No es exactamente un ataque propio sino invoca minúsculas termitas voladoras que hostigan y dificultan la visión"
+      },
+      {
+        "name": "Mordida real",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Abre enormemente sus mandíbulas y da un único pero devastador mordisco",
+        "howToAvoid": "Imprescindible bloquear con un escudo fuerte o esquivar con timing perfecto",
+        "notes": "Ataque de altísimo daño si conecta, capaz de derribar a un jugador con armadura débil; deja al Rey un poco expuesto tras fallarlo"
+      },
+      {
+        "name": "Carga corpulenta",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Baja la cabeza y embiste pesadamente hacia adelante unos pasos",
+        "howToAvoid": "Apartarse de la trayectoria; es más lento que otros ataques, aprovechable para contraatacar tras esquivar",
+        "notes": "Golpe con el cuerpo que hace temblar el suelo; puede romper bloques de madera podrida en su cueva durante la pelea"
+      }
+    ]
+  },
+  {
+    "id": "g1_black_ox_beetle",
+    "name": "Black Ox Beetle",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 38,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Black_Ox_Beetle.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Black_Ox_Beetle.webp",
+    "photo": "assets/g1/creatures/photos/Black_Ox_Beetle.webp",
+    "weaknesses": [
+      "salty",
+      "slashing"
+    ],
+    "resistances": [
+      "busting",
+      "spicy"
+    ],
+    "health": {
+      "rating": 4,
+      "value": 1100
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Carga arremetida",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Raspa el suelo con una pata y luego embiste en línea recta como un toro",
+        "howToAvoid": "Esquivar a último momento hacia un lado; tras la carga queda un instante desacelerando que se puede aprovechar",
+        "notes": "La embestida es rápida y de largo alcance; si golpea, causa mucho daño y derriba al jugador"
+      },
+      {
+        "name": "Lanzamiento de roca",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Excava rápidamente con su cabeza y lanza una roca grande hacia el jugador",
+        "howToAvoid": "Observar la roca y moverse lateralmente; la roca tiene trayectoria parabólica",
+        "notes": "Si impacta directamente es muy dañino; la roca al caer puede rebotar y aún dañar si golpea en el rebote"
+      },
+      {
+        "name": "Pisotón",
+        "tags": [
+          "aoe"
+        ],
+        "tell": "Levanta sus patas delanteras y las deja caer con fuerza en el suelo",
+        "howToAvoid": "Alejarse de inmediato cuando veas que se alza; saltar puede reducir el impacto pero no evitarlo completamente",
+        "notes": "Genera un pequeño temblor que daña y aturde a corto alcance; usado si el jugador está bajo su cabeza"
+      }
+    ]
+  },
+  {
+    "id": "g1_ladybird",
+    "name": "Ladybird",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 39,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Ladybird.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Ladybird.webp",
+    "photo": "assets/g1/creatures/photos/Ladybird.webp",
+    "weaknesses": [
+      "busting",
+      "fresh"
+    ],
+    "resistances": [
+      "salty",
+      "slashing",
+      "spicy"
+    ],
+    "health": {
+      "rating": 4,
+      "value": 900
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "salty",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "gut",
+      "susceptibleDamage": "stabbing"
+    },
+    "attacks": [
+      {
+        "name": "Carga furiosa",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Similar a la mariquita común, pero sus ojos brillan rojos al cargar",
+        "howToAvoid": "Esquivar a un lado en el último instante o bloquear con escudo muy robusto",
+        "notes": "Embestida aún más rápida y dañina que la de la mariquita normal; puede romper la guardia fácilmente"
+      },
+      {
+        "name": "Golpe ígneo",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Tras la carga, sacude violentamente su cuerpo despidiendo chispas ardientes",
+        "howToAvoid": "Alejarse inmediatamente después de esquivar la carga; las chispas tienen corto alcance",
+        "notes": "Las chispas pueden prender fuego al jugador si este no lleva armadura adecuada, añadiendo daño prolongado"
+      },
+      {
+        "name": "Rugido recuperador",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Deja escapar un rugido grave mientras sus manchas brillan anaranjado",
+        "howToAvoid": "Interrumpir con un ataque contundente durante el rugido",
+        "notes": "Se cura una cantidad moderada de salud si completa el rugido; solo lo hace cuando está muy herida"
+      }
+    ]
+  },
+  {
+    "id": "g1_green_shield_bug",
+    "name": "Green Shield Bug",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 40,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Green_Shield_Bug.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Green_Shield_Bug.webp",
+    "photo": "assets/g1/creatures/photos/Green_Shield_Bug.webp",
+    "weaknesses": [
+      "salty",
+      "slashing"
+    ],
+    "resistances": [
+      "busting",
+      "spicy"
+    ],
+    "health": {
+      "rating": 4,
+      "value": 1000
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "gut",
+      "susceptibleDamage": "stabbing"
+    },
+    "attacks": [
+      {
+        "name": "Nube tóxica masiva",
+        "tags": [
+          "aoe"
+        ],
+        "tell": "Igual al chinche apestoso pero exhala una nube mucho más grande y densa de gas verde",
+        "howToAvoid": "Huir rápidamente del radio de la nube (que es amplio) y esperar a que se disipe antes de acercarse",
+        "notes": "El gas es letal sin máscara de respiración; causa daño continuo muy alto y puede cubrir un área extensa dificultando la visibilidad"
+      },
+      {
+        "name": "Explosión tóxica",
+        "tags": [
+          "aoe"
+        ],
+        "tell": "Cuando su salud es baja, sacude todo su cuerpo y libera de golpe todo el gas restante en un estallido",
+        "howToAvoid": "Tomar la máxima distancia posible al verlo agitarse; esta explosión cubre todo alrededor suyo",
+        "notes": "Única vez por pelea cuando está por morir; es un último recurso que puede matar a un jugador desprevenido incluso tras derrotarlo"
+      },
+      {
+        "name": "Cabezazo pesado",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Arremete lentamente con su gruesa cabeza y caparazón frontal",
+        "howToAvoid": "Bloquear con escudo fuerte o evadir; su movimiento es telegráficamente lento",
+        "notes": "Daño moderado pero principalmente usado para empujar al jugador dentro de la nube de gas"
+      }
+    ]
+  },
+  {
+    "id": "g1_infected_wolf_spider",
+    "name": "Infected Wolf Spider",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 41,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Infected_Wolf_Spider.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Wolf_Spider.webp",
+    "photo": "assets/g1/creatures/photos/Infected_Wolf_Spider.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 5,
+      "value": 1000
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Combo de mordidas infeccioso",
+        "tags": [
+          "aoe"
+        ],
+        "tell": "Realiza sus típicas 3 mordidas rápidas, pero cada una desprende esporas al impactar",
+        "howToAvoid": "Bloquear con mucha precisión todas las mordidas o escapar tras la primera; evitar inhalar las esporas liberadas",
+        "notes": "Cada mordida envenena y además deja un pequeño rastro de esporas que causan daño por infección adicional"
+      },
+      {
+        "name": "Salto explosivo",
+        "tags": [
+          "aoe"
+        ],
+        "tell": "Salta hacia el jugador como la araña lobo normal, pero al aterrizar libera una explosión de esporas",
+        "howToAvoid": "Esquivar el salto y además alejarse unos metros más para no ser alcanzado por la explosión fúngica",
+        "notes": "La explosión al caer abarca alrededor de la zona de impacto, infligiendo daño de mildiú significativo a todo alrededor"
+      },
+      {
+        "name": "Disparo de bola de mildiú",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Apunta su cabeza y lanza una bola verde pálido de esporas concentradas",
+        "howToAvoid": "Tratar este proyectil como una roca lanzada: esquivar a un lado antes de que llegue",
+        "notes": "Al impactar contra el suelo o jugador, la bola explota en una nube de veneno fungoso; similar a una bomba de gas"
+      }
+    ]
+  },
+  {
+    "id": "g1_black_widow",
+    "name": "Black Widow",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 42,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Black_Widow.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Black_Widow.webp",
+    "photo": "assets/g1/creatures/photos/Black_Widow.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "slashing"
+    ],
+    "health": {
+      "rating": 5,
+      "value": 1200
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordida venenosa devastadora",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La viuda levanta levemente sus patas delanteras y lanza un mordisco único muy rápido",
+        "howToAvoid": "Bloquear perfectamente (imprescindible) o esquivar con mucho tiempo; su velocidad es extrema",
+        "notes": "Inyecta el veneno más letal del patio, que drena mucha salud en segundos. Un solo mordisco no bloqueado puede matar a un jugador sin resistencias"
+      },
+      {
+        "name": "Ataque de seda trampa",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Rápidamente dispara varios hilos de telaraña pegajosa en abanico hacia el jugador",
+        "howToAvoid": "Mantenerse móvil; si estás cerca de la viuda, trata de rodearla para que los hilos fallen",
+        "notes": "Si te impactan, inmovilizan al jugador durante varios segundos - tiempo suficiente para que la viuda conecte una mordida mortal"
+      },
+      {
+        "name": "Salto mortal",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Se agacha casi tocando el suelo y salta directamente a la posición del jugador",
+        "howToAvoid": "Rodar hacia atrás justo cuando salte, o emplear un desplazamiento lateral rápido",
+        "notes": "Similar al salto de la araña lobo pero más rápido; puede encadenar con una mordida apenas cae junto al jugador"
+      }
+    ]
+  },
+  {
+    "id": "g1_spiny_water_flea",
+    "name": "Spiny Water Flea",
+    "game": "g1",
+    "tier": 3,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 43,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Spiny_Water_Flea.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Spiny_Water_Flea.webp",
+    "photo": "assets/g1/creatures/photos/Spiny_Water_Flea.webp",
+    "weaknesses": [
+      "slashing",
+      "spicy"
+    ],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 60
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco rápido",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Nada hacia ti y muerde de forma semejante a la pulga normal, con un leve destello en sus espinas",
+        "howToAvoid": "Igual que con las pulgas comunes: moverse o bloquear con daga/tridente bajo el agua",
+        "notes": "Su daño es ligeramente mayor que la pulga de agua normal. Las espinas no añaden daño directo, solo decorativas"
+      }
+    ]
+  },
+  {
+    "id": "g1_tiger_mosquito",
+    "name": "Tiger Mosquito",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 44,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Tiger_Mosquito.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Tiger_Mosquito.webp",
+    "photo": "assets/g1/creatures/photos/Tiger_Mosquito.webp",
+    "weaknesses": [
+      "salty",
+      "slashing"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 250
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Picotazo triple letal",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El mosquito tigre zumba agresivamente y ejecuta tres estocadas seguidas con su aguijón afilado",
+        "howToAvoid": "Tratar de bloquear cada estocada consecutiva o esquivar repetidamente; requiere excelente timing por la rapidez",
+        "notes": "Mucho más dañino que el mosquito común; además succiona vida con cada picotazo exitoso, curándose ligeramente"
+      },
+      {
+        "name": "Ataque giratorio",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Vuela en círculos alrededor del jugador a alta velocidad antes de atacar",
+        "howToAvoid": "Mantener el escudo levantado hasta identificar el momento del ataque, o retroceder hasta romper su círculo",
+        "notes": "Dificulta apuntarle. Al terminar su giro, suele conectar un picotazo sorpresivo desde un ángulo lateral"
+      }
+    ]
+  },
+  {
+    "id": "g1_tick",
+    "name": "Tick",
+    "game": "g1",
+    "tier": 3,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 45,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Tick.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Tick.webp",
+    "photo": "assets/g1/creatures/photos/Tick.webp",
+    "weaknesses": [
+      "busting",
+      "fresh"
+    ],
+    "resistances": [
+      "salty"
+    ],
+    "health": {
+      "rating": 1,
+      "value": 50
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Picadura drenante",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La garrapata salta y se aferra momentáneamente, clavando su rostro en el jugador",
+        "howToAvoid": "Golpearla rápidamente antes de que salte; si se aferra, sacudir moviéndote erráticamente o usar un ataque cuerpo a cuerpo fuerte",
+        "notes": "Mientras está prendida al jugador, drena vida (roba salud). Luego se suelta. Causa daño menor pero cura a la garrapata"
+      }
+    ]
+  },
+  {
+    "id": "g1_black_widowling",
+    "name": "Black Widowling",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 46,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Black_Widowling.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Black_Widowling.webp",
+    "photo": "assets/g1/creatures/photos/Black_Widowling.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [],
+    "health": {
+      "rating": 3,
+      "value": 400
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco venenoso",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Ataque similar a una araña pequeña: se abalanza con un mordisco rápido",
+        "howToAvoid": "Bloquear o esquivar; aunque sean más débiles que la madre, su veneno sigue siendo peligroso",
+        "notes": "Inflige veneno potente (aunque no tanto como la viuda adulta). Generalmente atacan en grupo de 2-3"
+      }
+    ]
+  },
+  {
+    "id": "g1_wasp",
+    "name": "Wasp",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 47,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Wasp.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Wasp.webp",
+    "photo": "assets/g1/creatures/photos/Wasp.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 300
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Aguijonazo en picada",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La avispa vuela alto y luego se lanza en picada con el aguijón hacia adelante",
+        "howToAvoid": "Rodar hacia un lado en el último momento o bloquear con escudo (aunque aún empuja)",
+        "notes": "Ataque principal con su aguijón, causa daño significativo y puede aplicar veneno moderado"
+      },
+      {
+        "name": "Disparo de aguijón",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Desde lejos, sacude su abdomen y lanza un aguijón afilado a modo de proyectil",
+        "howToAvoid": "Observar la trayectoria lineal del aguijón y moverse fuera de ella",
+        "notes": "El aguijón disparado se clava en el suelo; puede recuperarse como recurso del aguijón de avispa tras la pelea"
+      },
+      {
+        "name": "Zumbido intimidante",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Vuela alrededor del jugador generando un fuerte zumbido continuo",
+        "howToAvoid": "Apartarse o atacarla para interrumpir el zumbido",
+        "notes": "El ruido dificulta apuntar y puede reducir la regeneración de aguante del jugador momentáneamente por distracción"
+      }
+    ]
+  },
+  {
+    "id": "g1_wasp_drone",
+    "name": "Wasp Drone",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 48,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Wasp_Drone.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Wasp_Drone.webp",
+    "photo": "assets/g1/creatures/photos/Wasp_Drone.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 350
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Aguijonazo cargado",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El avispón vuela en línea recta, cargando un ataque, luego embiste con su gran aguijón",
+        "howToAvoid": "Tratar como al de la avispa: esquivar en el último momento, pero tener en cuenta que es más rápido",
+        "notes": "Daño alto, puede aplicar un veneno más fuerte que la avispa común. Su velocidad de ataque es mayor al realizarlo"
+      },
+      {
+        "name": "Embestida con escudo",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El avispón pone sus alas rígidas hacia adelante a modo de escudo y arremete",
+        "howToAvoid": "Bloquear el impacto con escudo para evitar ser derribado, o saltar a un lado",
+        "notes": "Este ataque reduce el daño recibido frontalmente, actuando él mismo a la vez de ataque y defensa"
+      }
+    ]
+  },
+  {
+    "id": "g1_assistant_manager",
+    "name": "Assistant Manager",
+    "game": "g1",
+    "tier": 5,
+    "danger": "extrema",
+    "isBoss": true,
+    "order": 49,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Assistant_Manager.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Assistant_Manager.webp",
+    "photo": "assets/g1/creatures/photos/Assistant_Manager.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "slashing",
+      "spicy"
+    ],
+    "health": {
+      "rating": 5,
+      "value": 800
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Onda láser triple",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "El Assistant Manager levanta su brazo y dispara tres rayos láser en rápida sucesión",
+        "howToAvoid": "Correr en zigzag o saltar entre disparos para que no alineen; bloquear si es imposible esquivar alguno",
+        "notes": "Cada rayo causa daño energético moderado; en fase 2 los dispara más rápido"
+      },
+      {
+        "name": "Campo de fuerza",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Proyecta un escudo energético esférico alrededor de sí mismo",
+        "howToAvoid": "No malgastar ataques mientras esté activo; centrarte en esquivar sus otros ataques hasta que el escudo caiga",
+        "notes": "Lo vuelve invulnerable momentáneamente y también daña/impulsa al jugador si intenta entrar en contacto con el campo"
+      },
+      {
+        "name": "Invocación de refuerzos",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Hace una animación de pulsar un botón en su pecho, emitiendo un pitido",
+        "howToAvoid": "N/A (el refuerzo aparecerá). Prepararse para nuevos enemigos en el área",
+        "notes": "Invoca robots TAYZ.T y ARC.R adicionales durante la pelea. Debilitar o eliminar los adds rápidamente para no abrumarse"
+      },
+      {
+        "name": "Golpe eléctrico",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Si estás cerca, balancea su brazo electrificado hacia ti",
+        "howToAvoid": "Mantener distancia para forzarlo a ataques a distancia; si estás cerca, bloquear el golpe",
+        "notes": "Similar al ataque de un TAYZ.T pero con mayor daño. Puede aturdir si conecta"
+      }
+    ]
+  },
+  {
+    "id": "g1_hedge_broodmother",
+    "name": "Hedge Broodmother",
+    "game": "g1",
+    "tier": 5,
+    "danger": "extrema",
+    "isBoss": true,
+    "order": 50,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Hedge_Broodmother.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Hedge_Broodmother.webp",
+    "photo": "assets/g1/creatures/photos/Hedge_Broodmother.webp",
+    "weaknesses": [
+      "fresh",
+      "slashing"
+    ],
+    "resistances": [
+      "busting",
+      "explosive",
+      "salty",
+      "spicy",
+      "stabbing"
+    ],
+    "health": {
+      "rating": 5,
+      "value": 5000
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 25
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      },
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      },
+      {
+        "type": "busting",
+        "bonusPct": 25
+      },
+      {
+        "type": "explosive",
+        "bonusPct": 50
+      },
+      {
+        "type": "stabbing",
+        "bonusPct": 50
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco básico",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Desciende del techo y muerde inmediatamente al aterrizar",
+        "howToAvoid": "Bloquear tan pronto como toque el suelo, o alejarse mientras desciende",
+        "notes": "No se le puede hacer daño mientras baja del techo. Este mordisco inicial marca el comienzo de la pelea"
+      },
+      {
+        "name": "Combo arácnido",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Realiza la combinación de 3 golpes de la Tejedora Orb y a continuación un salto similar al de la Araña Lobo",
+        "howToAvoid": "Bloquear los primeros 3 mordiscos consecutivos, luego esquivar el salto final",
+        "notes": "Ataque múltiple que combina patrones de otras arañas; puede envenenar en cada mordida"
+      },
+      {
+        "name": "Rugido convocante",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Emite un chillido estridente",
+        "howToAvoid": "N/A (no se puede esquivar el efecto de sonido, pero se puede bloquear el debuff con un perfect block)",
+        "notes": "Al rugir en fase 2, invoca 7 crías (Spiderlings) desde el techo y aplica un debuff de daño al jugador (ataques del jugador hacen menos daño)"
+      },
+      {
+        "name": "Esquive ágil",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Emite un siseo y salta hacia atrás rápidamente",
+        "howToAvoid": "N/A (es un movimiento de ella, no un ataque hacia ti)",
+        "notes": "Sucede en fase 2: la Broodmother se aleja saltando para reposicionarse, infligiendo un pequeño daño y aplicando -Recuperación de agotamiento si te golpea al saltar"
+      },
+      {
+        "name": "Pounce envenenado",
+        "tags": [
+          "melee"
+        ],
+        "tell": "En fases posteriores, realiza un pounce (zarpazo) rápido semejante a la Araña Lobo pero con veneno intenso",
+        "howToAvoid": "Tratar como el salto normal pero ser consciente de que incluso un bloqueo parcial te envenenará",
+        "notes": "En fase 3, todas sus ataques pueden aplicar veneno. Este pounce es especialmente peligroso combinado con su mayor resistencia a mitad de vida"
+      },
+      {
+        "name": "Invocación de refuerzos",
+        "tags": [
+          "utility"
+        ],
+        "tell": "A 50% de vida, chilla de nuevo y genera 4 Spiderlings y 2 Orb Weaver Jr adicionales",
+        "howToAvoid": "N/A (prepárate para lidiar con los adds); enfoca primero en eliminar los Orb Weaver Jr invocados",
+        "notes": "En fase 3 (50% salud), además de aumentar sus resistencias casi a la mitad del daño, trae más crías para abrumar al jugador"
+      }
+    ]
+  },
+  {
+    "id": "g1_mant",
+    "name": "Mant",
+    "game": "g1",
+    "tier": 5,
+    "danger": "extrema",
+    "isBoss": true,
+    "order": 51,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Mant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Mant.webp",
+    "photo": "assets/g1/creatures/photos/Mant.webp",
+    "weaknesses": [
+      "slashing",
+      "spicy"
+    ],
+    "resistances": [
+      "busting",
+      "salty"
+    ],
+    "health": {
+      "rating": 5,
+      "value": 4500
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "spicy",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 25
+      },
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Golpe de martillo",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El Mant levanta uno de sus enormes brazos y lo deja caer en un golpe aplastante",
+        "howToAvoid": "Rodar hacia un lado cuando veas su brazo elevarse",
+        "notes": "El impacto causa un temblor que puede tambalear al jugador si está muy cerca"
+      },
+      {
+        "name": "Aplauso sónico",
+        "tags": [
+          "ranged",
+          "aoe"
+        ],
+        "tell": "Golpea ambas palmas creando una onda expansiva visible",
+        "howToAvoid": "Saltar justo antes de que la onda te alcance para reducir el impacto, o bloquear pero recibes algo de daño igualmente",
+        "notes": "La onda viaja en línea recta. Causa daño moderado y puede aturdir en amplio cono frontal"
+      },
+      {
+        "name": "Embestida con salto",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Dobla las rodillas y se abalanza con un gran salto hacia ti",
+        "howToAvoid": "Esquivar lateralmente en el último instante, ya que puede corregir levemente la trayectoria en el aire",
+        "notes": "Cubre gran distancia. Si golpea, además del daño te derriba al suelo"
+      },
+      {
+        "name": "Invocación de hormigas O.R.C.",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Emite un zumbido mecánico desde su tórax",
+        "howToAvoid": "N/A (prepararse para nuevos enemigos)",
+        "notes": "Invoca hormigas O.R.C. (hormigas robotizadas) para que lo asistan en combate cuando su salud baja del 50%. Estas hormigas explotan al morir"
+      }
+    ]
+  },
+  {
+    "id": "g1_mantis",
+    "name": "Mantis",
+    "game": "g1",
+    "tier": 5,
+    "danger": "extrema",
+    "isBoss": true,
+    "order": 52,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Mantis.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Mantis.webp",
+    "photo": "assets/g1/creatures/photos/Mantis.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 5,
+      "value": 6000
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Corte de guadaña",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La Mantis balancea una de sus garras delanteras en un amplio arco",
+        "howToAvoid": "Esquivar hacia atrás fuera del alcance del brazo o bloquear con escudo reforzado",
+        "notes": "Ataque rápido que cubre un semicírculo enfrente de ella; puede cortar vegetación cercana"
+      },
+      {
+        "name": "Salto devastador",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Baja su cuerpo y sus élitros vibran antes de lanzarse en un salto largo",
+        "howToAvoid": "Rodar hacia un lado al ver que inicia el salto, ya que caerá exactamente donde estabas",
+        "notes": "Al aterrizar genera un gran daño en área y puede dejar al jugador confuso unos instantes"
+      },
+      {
+        "name": "Furia de mantis",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Cuando su salud cae por debajo del 25%, emite un chillido agudo y sus ojos brillan de color rojo",
+        "howToAvoid": "N/A (no se puede evitar la activación); extremar precaución a partir de ese momento",
+        "notes": "Entra en estado de furia: aumenta su velocidad y frecuencia de ataques. Sus patrones se vuelven menos telegráficos y más rápidos"
+      },
+      {
+        "name": "Golpe doble en X",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Enfurecida, cruza ambas garras y realiza dos tajos cruzados en rápida sucesión en forma de X",
+        "howToAvoid": "Bloquear ambos tajos rápidamente o esquivar hacia atrás (un costado puede aún alcanzarte debido al rango amplio)",
+        "notes": "Ataque característico en fase de furia; muy dañino, pero deja un corto intervalo tras completarlo donde la Mantis queda abierta"
+      }
+    ]
+  },
+  {
+    "id": "g1_director_schmector",
+    "name": "Director Schmector",
+    "game": "g1",
+    "tier": 5,
+    "danger": "extrema",
+    "isBoss": true,
+    "order": 53,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Director_Schmector.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Director_Schmector.webp",
+    "photo": "assets/g1/creatures/photos/Director_Schmector.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "slashing",
+      "spicy"
+    ],
+    "health": {
+      "rating": 5,
+      "value": 7000
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Ráfaga láser 360°",
+        "tags": [
+          "ranged",
+          "aoe"
+        ],
+        "tell": "El Director extiende ambos brazos y gira rápidamente, emitiendo un anillo láser alrededor suyo",
+        "howToAvoid": "Saltar sobre el láser cuando pase por tu posición (o agacharse si el láser va alto, según altura del emisor)",
+        "notes": "Cubre todo alrededor, hay que tener timing. Causa daño energético severo si conecta"
+      },
+      {
+        "name": "Ataque de plataforma",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Schmector activa un panel y electrifica secciones del piso de la arena (parpadean en rojo antes)",
+        "howToAvoid": "Salir inmediatamente de las baldosas brillando en rojo antes de que reciban la descarga",
+        "notes": "Trampa del entorno: las descargas del suelo infligen alto daño y aturden. Director aprovecha esos momentos para atacarte"
+      },
+      {
+        "name": "Llamado de ORC",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Pulsa su reloj y varias señales O.R.C. suenan",
+        "howToAvoid": "N/A; prepárate para robots O.R.C. entrando al combate",
+        "notes": "Invoca múltiples unidades O.R.C. (variantes más fuertes de TAYZ.T, etc.) para asistirlo. Manejar multitud además del jefe"
+      },
+      {
+        "name": "Descarga de pulso",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Apunta su brazo cañón y dispara un proyectil de pulso eléctrico azul",
+        "howToAvoid": "Esquivar lateralmente; el proyectil es rápido pero se ve venir por la carga en su brazo",
+        "notes": "Si el pulso te golpea, drena parte de tu aguante además de dañar"
+      }
+    ]
+  },
+  {
+    "id": "g1_wasp_queen",
+    "name": "Wasp Queen",
+    "game": "g1",
+    "tier": 5,
+    "danger": "extrema",
+    "isBoss": true,
+    "order": 54,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Wasp_Queen.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Wasp_Queen.webp",
+    "photo": "assets/g1/creatures/photos/Wasp_Queen.webp",
+    "weaknesses": [
+      "busting",
+      "salty"
+    ],
+    "resistances": [
+      "spicy"
+    ],
+    "health": {
+      "rating": 5,
+      "value": 8000
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Aguijonazo real",
+        "tags": [
+          "melee"
+        ],
+        "tell": "La Reina se eleva ligeramente y embiste con un veloz picotazo hacia el jugador",
+        "howToAvoid": "Bloquear con escudo fuerte o esquivar; la velocidad es extrema, anticipa su movimiento de elevación",
+        "notes": "Daño masivo si conecta. A diferencia de otras avispas, su aguijón no se rompe, puede repetirlo consecutivamente"
+      },
+      {
+        "name": "Lluvia de aguijones",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Se eleva muy alto y agita violentamente su abdomen, lanzando múltiples aguijones hacia abajo",
+        "howToAvoid": "Correr constantemente; los proyectiles caen como lluvia en distintas partes, busca abrirte espacio entre ellos",
+        "notes": "Cubre amplio rango, difícil de esquivar todo. Cada aguijón causa daño y queda clavado en el suelo"
+      },
+      {
+        "name": "Frenesí aéreo",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Entra en cólera cuando su salud es baja: sus alas vibran creando un sonido ensordecedor continuo",
+        "howToAvoid": "N/A (efecto global); mantener la calma y enfocarse en bloquear y contraatacar con precisión",
+        "notes": "Mientras dure el frenesí, todos sus ataques se vuelven más rápidos y casi sin pausas. Este es su estado más letal antes de morir"
+      },
+      {
+        "name": "Convocar refuerzos",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Emite un zumbido resonante desde su tórax",
+        "howToAvoid": "N/A; habrá que lidiar con las avispas convocadas",
+        "notes": "Llama a varias avispas obreras para que la defiendan. Estos refuerzos continúan apareciendo periódicamente hasta que la Reina caiga"
+      }
+    ]
+  },
+  {
+    "id": "g1_infected_broodmother",
+    "name": "Infected Broodmother",
+    "game": "g1",
+    "tier": 5,
+    "danger": "extrema",
+    "isBoss": true,
+    "order": 55,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Infected_Broodmother.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Broodmother.webp",
+    "photo": "assets/g1/creatures/photos/Infected_Broodmother.webp",
+    "weaknesses": [
+      "busting",
+      "fresh"
+    ],
+    "resistances": [
+      "slashing",
+      "spicy"
+    ],
+    "health": {
+      "rating": 5,
+      "value": 7000
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Combo de mordidas infectado",
+        "tags": [
+          "aoe"
+        ],
+        "tell": "Imita el combo de la Broodmother original, pero cada mordisco genera una pequeña explosión de esporas",
+        "howToAvoid": "Bloquear los mordiscos y moverse enseguida para no inhalar las esporas que deja cada golpe",
+        "notes": "Veneno y daño por explosión combinados en cada mordida; extremadamente peligroso sin antídotos de veneno"
+      },
+      {
+        "name": "Scream fúngico",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Lanza un grito distorsionado impregnado de esporas",
+        "howToAvoid": "Bloquear el momento del grito para anular el efecto, o estar lo suficientemente lejos",
+        "notes": "El grito aplica Life Steal inverso al jugador (los ataques de la jefa le curan vida) mientras está en el agua de la arena"
+      },
+      {
+        "name": "Invocación infectada",
+        "tags": [
+          "utility"
+        ],
+        "tell": "A distintos umbrales de vida, convoca Spiderlings y Orb Weaver Jr infectados en lugar de normales",
+        "howToAvoid": "N/A; priorizar matar a los adds infectados que pueden explotar al morir",
+        "notes": "Sus minions invocados también están infectados, lo que añade caos con sus propias explosiones de esporas"
+      },
+      {
+        "name": "Salto aplastante tóxico",
+        "tags": [
+          "aoe"
+        ],
+        "tell": "Salta y al caer libera una gran onda de infección alrededor",
+        "howToAvoid": "Como con la Broodmother normal, esquivar el salto, pero también alejarse más lejos de la usual área de impacto debido a la expansión de esporas",
+        "notes": "Una versión potenciada del salto de la Broodmother: además del daño de impacto, deja una zona envenenada en el suelo"
+      }
+    ]
+  },
+  {
+    "id": "g1_koi_fish",
+    "name": "Koi Fish",
+    "game": "g1",
+    "tier": 5,
+    "danger": "extrema",
+    "isBoss": true,
+    "order": 56,
+    "defaultGold": true,
+    "cardNormal": "assets/g1/creatures/cards/gold/Creaturecardgold_Koi_Fish.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Koi_Fish.webp",
+    "photo": "assets/g1/creatures/photos/Koi_Fish.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 5,
+      "value": null
+    },
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordida instantánea",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El Koi se acerca sigilosamente bajo el agua y abre enormemente la boca",
+        "howToAvoid": "Salir inmediatamente a la superficie o refugiarse tras rocas; es casi imposible de esquivar una vez que está cerca",
+        "notes": "Mata de un solo golpe al jugador si lo atrapa. Su daño es tan alto que prácticamente no hay defensa salvo evitarlo"
+      },
+      {
+        "name": "Engullir (Gulp)",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Realiza un movimiento de succión repentino con su boca, tragando todo lo cercano",
+        "howToAvoid": "Mantenerse lejos del Koi; si estás cerca y ves que abre la boca, ya es tarde, intenta bloquear para mitigar quizá un poco el daño aunque igualmente morirás",
+        "notes": "Igual de letal que la mordida. No hay escapatoria una vez que comienza el engullimiento si estás a rango"
+      }
+    ]
+  },
+  {
+    "id": "g1_aphid",
+    "name": "Aphid",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 57,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Aphid.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Aphid.webp",
+    "photo": "assets/g1/creatures/photos/Aphid.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 10
+    }
+  },
+  {
+    "id": "g1_weevil",
+    "name": "Weevil",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 58,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Weevil.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Weevil.webp",
+    "photo": "assets/g1/creatures/photos/Weevil.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 15
+    }
+  },
+  {
+    "id": "g1_grub",
+    "name": "Grub",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 59,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Grub.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Grub.webp",
+    "photo": "assets/g1/creatures/photos/Grub.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 20
+    }
+  },
+  {
+    "id": "g1_gnat",
+    "name": "Gnat",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 60,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Gnat.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Gnat.webp",
+    "photo": "assets/g1/creatures/photos/Gnat.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 8
+    },
+    "attacks": [
+      {
+        "name": "Empujón molesto",
+        "tags": [
+          "melee"
+        ],
+        "tell": "El jejen revolotea cerca y te golpea levemente empujándote",
+        "howToAvoid": "No es peligroso; simplemente ignorar o apartarlo con un arma",
+        "notes": "No causa daño apreciable, solo empuja al jugador ligeramente"
+      }
+    ]
+  },
+  {
+    "id": "g1_meaty_gnat",
+    "name": "Meaty Gnat",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 61,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Meaty_Gnat.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Meaty_Gnat.webp",
+    "photo": "assets/g1/creatures/photos/Meaty_Gnat.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 8
+    },
+    "attacks": [
+      {
+        "name": "Empujón pesado",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Igual que un jejen normal, se abalanza, pero por su tamaño empuja un poco más fuerte",
+        "howToAvoid": "Mismas tácticas que con los gnats: su daño es insignificante",
+        "notes": "Su ataque apenas difiere; sigue siendo inofensivo salvo por el retroceso ligeramente mayor al golpearte"
+      }
+    ]
+  },
+  {
+    "id": "g1_tadpole",
+    "name": "Tadpole",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 62,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Tadpole.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Tadpole.webp",
+    "photo": "assets/g1/creatures/photos/Tadpole.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 25
+    }
+  },
+  {
+    "id": "g1_water_boatman",
+    "name": "Water Boatman",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 63,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Water_Boatman.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Water_Boatman.webp",
+    "photo": "assets/g1/creatures/photos/Water_Boatman.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 50
+    }
+  },
+  {
+    "id": "g1_scarab",
+    "name": "Scarab",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 64,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Scarab.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Scarab.webp",
+    "photo": "assets/g1/creatures/photos/Scarab.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 5
+    }
+  },
+  {
+    "id": "g1_red_ant_queen",
+    "name": "Red Ant Queen",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 65,
+    "defaultGold": true,
+    "cardNormal": "assets/g1/creatures/cards/gold/Creaturecardgold_Red_Ant_Queen.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Red_Ant_Queen.webp",
+    "photo": "assets/g1/creatures/photos/Red_Ant_Queen.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 3,
+      "value": 800
+    }
+  },
+  {
+    "id": "g1_baby_red_ant",
+    "name": "Baby Red Ant",
+    "game": "g1",
+    "tier": 1,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 66,
+    "defaultGold": true,
+    "cardNormal": "assets/g1/creatures/cards/gold/Creaturecardgold_Baby_Red_Ant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Baby_Red_Ant.webp",
+    "photo": "assets/g1/creatures/photos/Baby_Red_Ant.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 5
+    }
+  },
+  {
+    "id": "g1_baby_black_ant",
+    "name": "Baby Black Ant",
+    "game": "g1",
+    "tier": 2,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 67,
+    "defaultGold": true,
+    "cardNormal": "assets/g1/creatures/cards/gold/Creaturecardgold_Baby_Black_Ant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Baby_Black_Ant.webp",
+    "photo": "assets/g1/creatures/photos/Baby_Black_Ant.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 5
+    }
+  },
+  {
+    "id": "g1_baby_fire_ant",
+    "name": "Baby Fire Ant",
+    "game": "g1",
+    "tier": 3,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 68,
+    "defaultGold": true,
+    "cardNormal": "assets/g1/creatures/cards/gold/Creaturecardgold_Baby_Fire_Ant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Baby_Fire_Ant.webp",
+    "photo": "assets/g1/creatures/photos/Baby_Fire_Ant.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 1,
+      "value": 5
+    }
+  },
+  {
+    "id": "g1_black_ant_queen",
+    "name": "Black Ant Queen",
+    "game": "g1",
+    "tier": 2,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 69,
+    "defaultGold": true,
+    "cardNormal": "assets/g1/creatures/cards/gold/Creaturecardgold_Black_Ant_Queen.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Black_Ant_Queen.webp",
+    "photo": "assets/g1/creatures/photos/Black_Ant_Queen.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 4,
+      "value": 1200
+    }
+  },
+  {
+    "id": "g1_fire_ant_queen",
+    "name": "Fire Ant Queen",
+    "game": "g1",
+    "tier": 3,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 70,
+    "defaultGold": true,
+    "cardNormal": "assets/g1/creatures/cards/gold/Creaturecardgold_Fire_Ant_Queen.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Fire_Ant_Queen.webp",
+    "photo": "assets/g1/creatures/photos/Fire_Ant_Queen.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 4,
+      "value": 1500
+    }
+  },
+  {
+    "id": "g1_crow",
+    "name": "Crow",
+    "game": "g1",
+    "tier": 5,
+    "danger": "baja",
+    "isBoss": false,
+    "order": 71,
+    "defaultGold": true,
+    "cardNormal": "assets/g1/creatures/cards/gold/Creaturecardgold_Crow.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Crow.webp",
+    "photo": "assets/g1/creatures/photos/Crow.webp",
+    "weaknesses": [],
+    "resistances": [],
+    "health": {
+      "rating": 5,
+      "value": null
+    }
+  },
+  {
+    "id": "g1_infected_ant",
+    "name": "Infected Ant",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 72,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Infected_Ant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Ant.webp",
+    "photo": "assets/g1/creatures/photos/Infected_Ant.webp",
+    "weaknesses": [
+      "busting",
+      "fresh"
+    ],
+    "resistances": [
+      "slashing"
+    ],
+    "health": {
+      "rating": 3,
+      "value": 300
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "slashing",
+        "bonusPct": 50
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco fúngico",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Igual que una hormiga normal, muerde, pero libera esporas al morder",
+        "howToAvoid": "Bloquear o esquivar; alejarse de las esporas después de cada mordida",
+        "notes": "Causa daño mayor que una obrera de fuego y deja nubes pequeñas de esporas con cada ataque exitoso"
+      },
+      {
+        "name": "Mordida aturdidora",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Sus ojos brillan brevemente antes de una mordida particular",
+        "howToAvoid": "Tratar de bloquear; si impacta sin bloqueo, provoca aturdimiento notable",
+        "notes": "Uno de sus combos incluye esta mordida con menor daño directo pero aplica aturdimiento (Stun)"
+      },
+      {
+        "name": "Escupitajo-bomba",
+        "tags": [
+          "ranged"
+        ],
+        "tell": "Levanta la cabeza y escupe una bola verde brillante",
+        "howToAvoid": "Esquivar lateralmente; la bola viaja relativamente despacio",
+        "notes": "La bola explota al contacto con el suelo u objetivo, infligiendo daño en área"
+      }
+    ]
+  },
+  {
+    "id": "g1_infected_soldier_ant",
+    "name": "Infected Soldier Ant",
+    "game": "g1",
+    "tier": 3,
+    "danger": "media",
+    "isBoss": false,
+    "order": 73,
+    "defaultGold": false,
+    "cardNormal": "assets/g1/creatures/cards/normal/Creaturecard_Infected_Soldier_Ant.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Soldier_Ant.webp",
+    "photo": "assets/g1/creatures/photos/Infected_Soldier_Ant.webp",
+    "weaknesses": [
+      "busting",
+      "fresh"
+    ],
+    "resistances": [
+      "slashing"
+    ],
+    "health": {
+      "rating": 4,
+      "value": 500
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "resistancesV2": [
+      {
+        "type": "slashing",
+        "bonusPct": 50
+      }
+    ],
+    "weakPoint": {
+      "part": "eyes",
+      "susceptibleDamage": "stabbing_arrows_only"
+    },
+    "attacks": [
+      {
+        "name": "Mordisco explosivo",
+        "tags": [
+          "aoe"
+        ],
+        "tell": "Realiza una mordida fuerte y la acompaña con una explosión de esporas desde su abdomen",
+        "howToAvoid": "Bloquear la mordida y enseguida retroceder para no quedar en la explosión",
+        "notes": "Combina daño físico alto con daño de explosión; muy peligroso a corta distancia"
+      },
+      {
+        "name": "Carga infectada",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Embiste como una hormiga soldado normal pero deja un rastro de esporas en su recorrido",
+        "howToAvoid": "Esquivar la embestida; evitar luego pasar por la nube de esporas suspendidas en el aire",
+        "notes": "Menos precisa que la mordida pero cubre distancia; el rastro de esporas actúa como trampa de área unos segundos"
+      }
+    ]
+  },
+  {
+    "id": "g1_infected_ant_queen",
+    "name": "Infected Ant Queen",
+    "game": "g1",
+    "tier": 5,
+    "danger": "extrema",
+    "isBoss": true,
+    "order": 74,
+    "defaultGold": true,
+    "cardNormal": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Ant_Queen.webp",
+    "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Ant_Queen.webp",
+    "photo": "assets/g1/creatures/photos/Infected_Ant_Queen.webp",
+    "weaknesses": [
+      "busting",
+      "fresh"
+    ],
+    "resistances": [],
+    "health": {
+      "rating": 5,
+      "value": 2000
+    },
+    "elementalWeaknesses": [
+      {
+        "type": "fresh",
+        "bonusPct": 50
+      }
+    ],
+    "damageWeaknesses": [
+      {
+        "type": "busting",
+        "bonusPct": 25
+      }
+    ],
+    "weakPoint": {
+      "part": "back",
+      "susceptibleDamage": "any"
+    },
+    "attacks": [
+      {
+        "name": "Rugido corrosivo",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Emite un rugido largo, esporas verdes fluyendo de su boca",
+        "howToAvoid": "Bloquear para reducir el efecto",
+        "notes": "Aplica un fuerte -Defensa al jugador, haciendo que reciba mucho más daño por un tiempo breve"
+      },
+      {
+        "name": "Mordisco triple real",
+        "tags": [
+          "melee"
+        ],
+        "tell": "Igual que una reina normal no ataca, pero infectada realiza tres mordidas lentas pero devastadoras",
+        "howToAvoid": "Alejarse, ya que bloquear todas tres es difícil sin quedar aturdido por el veneno acumulado",
+        "notes": "Cada mordida causa daño masivo y veneno; únicas ofensivas directas que realiza"
+      },
+      {
+        "name": "Sacudida de colmena",
+        "tags": [
+          "utility"
+        ],
+        "tell": "Agita violentamente su abdomen, liberando feromonas infectadas",
+        "howToAvoid": "N/A",
+        "notes": "Inmediatamente todas las hormigas infectadas cercanas se vuelven enloquecidas, ganando velocidad y daño extra al jugador"
+      }
+    ]
+  }
+]
