@@ -62,7 +62,7 @@
     "name": "Black Worker Ant",
     "game": "g1",
     "tier": 2,
-    "danger": "baja",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 2,
     "defaultGold": false,
@@ -128,7 +128,7 @@
     "name": "Ladybug",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 3,
     "defaultGold": false,
@@ -231,7 +231,7 @@
     "name": "Bee",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 4,
     "defaultGold": false,
@@ -302,7 +302,7 @@
     "name": "Firefly",
     "game": "g1",
     "tier": 2,
-    "danger": "baja",
+    "danger": "media",
     "isBoss": false,
     "order": 5,
     "defaultGold": false,
@@ -373,7 +373,7 @@
     "name": "Sickly Roly Poly",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "alta",
     "isBoss": false,
     "order": 6,
     "defaultGold": false,
@@ -453,7 +453,7 @@
     "name": "Roly Poly",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "alta",
     "isBoss": false,
     "order": 7,
     "defaultGold": false,
@@ -533,7 +533,7 @@
     "name": "Moth",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "imposible",
     "isBoss": false,
     "order": 8,
     "defaultGold": false,
@@ -720,7 +720,7 @@
     "name": "Larva",
     "game": "g1",
     "tier": 1,
-    "danger": "baja",
+    "danger": "media",
     "isBoss": false,
     "order": 11,
     "defaultGold": false,
@@ -1030,7 +1030,7 @@
     "name": "Black Soldier Ant",
     "game": "g1",
     "tier": 1,
-    "danger": "media",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 16,
     "defaultGold": false,
@@ -1167,7 +1167,7 @@
     "name": "ARC.R",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 18,
     "defaultGold": false,
@@ -1238,7 +1238,7 @@
     "name": "Mosquito",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 19,
     "defaultGold": false,
@@ -1304,7 +1304,7 @@
     "name": "Infected Weevil",
     "game": "g1",
     "tier": 2,
-    "danger": "baja",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 20,
     "defaultGold": false,
@@ -1351,8 +1351,8 @@
           "melee"
         ],
         "tell": "El gorgojo infectado emite un sonido sibilante y corre directamente hacia el jugador",
-        "howToAvoid": "Tomar distancia o eliminarlo antes de que llegue; si se acerca demasiado, bloquear la explosión",
-        "notes": "Al contacto o tras unos segundos, explota liberando esporas; la explosión causa daño de área y deja nubes tóxicas"
+        "howToAvoid": "Tomar distancia o eliminarlo antes de que llegue; si se acerca demasiado, huir de la explosión",
+        "notes": "Al contacto o tras unos segundos, explota liberando esporas; la explosión causa daño de área y deja area tóxica"
       }
     ]
   },
@@ -1361,7 +1361,7 @@
     "name": "Infected Mite",
     "game": "g1",
     "tier": 2,
-    "danger": "baja",
+    "danger": "media",
     "isBoss": false,
     "order": 21,
     "defaultGold": false,
@@ -1418,7 +1418,7 @@
     "name": "Infected Ladybug",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 22,
     "defaultGold": false,
@@ -1487,7 +1487,7 @@
     "name": "Infected Larva",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 23,
     "defaultGold": false,
@@ -1544,7 +1544,7 @@
     "name": "Infected Gnat",
     "game": "g1",
     "tier": 2,
-    "danger": "baja",
+    "danger": "media",
     "isBoss": false,
     "order": 24,
     "defaultGold": false,
@@ -1586,13 +1586,13 @@
     },
     "attacks": [
       {
-        "name": "Explosión en picada",
+        "name": "Robo de arma",
         "tags": [
           "melee"
         ],
-        "tell": "El mosquito infectado vuela en círculos y de pronto cae en picado brillando intensamente",
-        "howToAvoid": "Alejarse del punto donde caerá; si se acerca demasiado, bloquear la explosión",
-        "notes": "Se inmola al contacto, explotando en esporas. Daño muy bajo pero puede desorientar"
+        "tell": "El mosquito infectado vuela hacia ti y te hace tirar tu arma al suelo",
+        "howToAvoid": "Alejarse y eliminar con arma a distancia",
+        "notes": "Es muy molesto ya que no puedes usar tus armas cuerpo a cuerpo si te ve"
       }
     ]
   },
@@ -1601,7 +1601,7 @@
     "name": "Stinkbug",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 25,
     "defaultGold": false,
@@ -1672,7 +1672,7 @@
     "name": "Orb Weaver",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 26,
     "defaultGold": false,
@@ -1813,7 +1813,7 @@
     "name": "Wolf Spider",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "alta",
     "isBoss": false,
     "order": 28,
     "defaultGold": false,
@@ -1878,7 +1878,7 @@
           "melee"
         ],
         "tell": "Reúne fuerza y salta en arco hacia la posición del jugador",
-        "howToAvoid": "Rodar o correr fuera del punto de aterrizaje; mantenerse en movimiento cuando salta",
+        "howToAvoid": "Correr fuera del punto de aterrizaje; mantenerse en movimiento cuando salta",
         "notes": "Si cae sobre el jugador, inflige gran daño; su impacto puede sacudir la cámara y desorientar"
       },
       {
@@ -1897,7 +1897,7 @@
     "name": "Bombardier Beetle",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 29,
     "defaultGold": false,
@@ -1977,7 +1977,7 @@
     "name": "Fire Worker Ant",
     "game": "g1",
     "tier": 2,
-    "danger": "media",
+    "danger": "alta",
     "isBoss": false,
     "order": 30,
     "defaultGold": false,
@@ -2043,7 +2043,7 @@
     "name": "Fire Soldier Ant",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "alta",
     "isBoss": false,
     "order": 31,
     "defaultGold": false,
@@ -2109,7 +2109,7 @@
     "name": "Dust Mite",
     "game": "g1",
     "tier": 3,
-    "danger": "baja",
+    "danger": "media",
     "isBoss": false,
     "order": 32,
     "defaultGold": false,
@@ -2175,7 +2175,7 @@
     "name": "Ladybird Larva",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "alta",
     "isBoss": false,
     "order": 33,
     "defaultGold": false,
@@ -2241,7 +2241,7 @@
     "name": "Antlion",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "alta",
     "isBoss": false,
     "order": 34,
     "defaultGold": false,
@@ -2316,7 +2316,7 @@
     "name": "Termite Worker",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "intermedia",
     "isBoss": false,
     "order": 35,
     "defaultGold": false,
@@ -2382,7 +2382,7 @@
     "name": "Termite Soldier",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "alta",
     "isBoss": false,
     "order": 36,
     "defaultGold": false,
@@ -2448,7 +2448,7 @@
     "name": "Termite King",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "muy_alta",
     "isBoss": false,
     "order": 37,
     "defaultGold": false,
@@ -2490,13 +2490,13 @@
     },
     "attacks": [
       {
-        "name": "Ráfaga de polillas",
+        "name": "Rey de la colonia",
         "tags": [
           "ranged"
         ],
-        "tell": "El Rey emite un chillido convocando una nube de termitas diminutas que salen volando de su espalda hacia el jugador",
-        "howToAvoid": "Retroceder y usar un arma a distancia o de área para eliminar la nube de pequeñas termitas voladoras",
-        "notes": "No es exactamente un ataque propio sino invoca minúsculas termitas voladoras que hostigan y dificultan la visión"
+        "tell": "El Rey se encuentra rodeado de termitas soldado y obreras",
+        "howToAvoid": "Retroceder y usar un arma a distancia o de área para eliminar las termitas del area",
+        "notes": "No es exactamente un ataque propio sino que por su area de spawn se encuentra rodeado de termitas"
       },
       {
         "name": "Mordida real",
@@ -2523,7 +2523,7 @@
     "name": "Black Ox Beetle",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "muy_alta",
     "isBoss": false,
     "order": 38,
     "defaultGold": false,
@@ -2603,7 +2603,7 @@
     "name": "Ladybird",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "muy_alta",
     "isBoss": false,
     "order": 39,
     "defaultGold": false,
@@ -2688,7 +2688,7 @@
     "name": "Green Shield Bug",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "imposible",
     "isBoss": false,
     "order": 40,
     "defaultGold": false,
@@ -2768,7 +2768,7 @@
     "name": "Infected Wolf Spider",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "imposible",
     "isBoss": false,
     "order": 41,
     "defaultGold": false,
@@ -2843,7 +2843,7 @@
     "name": "Black Widow",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "imposible_alta",
     "isBoss": false,
     "order": 42,
     "defaultGold": false,
@@ -2918,7 +2918,7 @@
     "name": "Spiny Water Flea",
     "game": "g1",
     "tier": 3,
-    "danger": "baja",
+    "danger": "alta",
     "isBoss": false,
     "order": 43,
     "defaultGold": false,
@@ -2958,7 +2958,7 @@
         ],
         "tell": "Nada hacia ti y muerde de forma semejante a la pulga normal, con un leve destello en sus espinas",
         "howToAvoid": "Igual que con las pulgas comunes: moverse o bloquear con daga/tridente bajo el agua",
-        "notes": "Su daño es ligeramente mayor que la pulga de agua normal. Las espinas no añaden daño directo, solo decorativas"
+        "notes": "Su daño es ligeramente mayor que la pulga de agua normal. Las espinas no añaden daño directo, solo decorativas. Pero evitar a toda costa ser acorralado por varias"
       }
     ]
   },
@@ -2967,7 +2967,7 @@
     "name": "Tiger Mosquito",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "alta",
     "isBoss": false,
     "order": 44,
     "defaultGold": false,
@@ -3033,7 +3033,7 @@
     "name": "Tick",
     "game": "g1",
     "tier": 3,
-    "danger": "baja",
+    "danger": "alta",
     "isBoss": false,
     "order": 45,
     "defaultGold": false,
@@ -3079,9 +3079,9 @@
         "tags": [
           "melee"
         ],
-        "tell": "La garrapata salta y se aferra momentáneamente, clavando su rostro en el jugador",
-        "howToAvoid": "Golpearla rápidamente antes de que salte; si se aferra, sacudir moviéndote erráticamente o usar un ataque cuerpo a cuerpo fuerte",
-        "notes": "Mientras está prendida al jugador, drena vida (roba salud). Luego se suelta. Causa daño menor pero cura a la garrapata"
+        "tell": "La garrapata salta y se roba vida del jugador",
+        "howToAvoid": "Golpearla rápidamente antes de que salte; si se salta, evitar moviéndote erráticamente o usar un bloqueo perfecto",
+        "notes": "Mientras está golpea al jugador, drena vida (roba salud). Causa daño medio pero cura a la garrapata"
       }
     ]
   },
@@ -3090,7 +3090,7 @@
     "name": "Black Widowling",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "alta",
     "isBoss": false,
     "order": 46,
     "defaultGold": false,
@@ -3139,7 +3139,7 @@
     "name": "Wasp",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "muy_alta",
     "isBoss": false,
     "order": 47,
     "defaultGold": false,
@@ -3186,7 +3186,7 @@
           "melee"
         ],
         "tell": "La avispa vuela alto y luego se lanza en picada con el aguijón hacia adelante",
-        "howToAvoid": "Rodar hacia un lado en el último momento o bloquear con escudo (aunque aún empuja)",
+        "howToAvoid": "Mover hacia un lado en el último momento o bloquear con escudo (aunque aún empuja)",
         "notes": "Ataque principal con su aguijón, causa daño significativo y puede aplicar veneno moderado"
       },
       {
@@ -3197,15 +3197,6 @@
         "tell": "Desde lejos, sacude su abdomen y lanza un aguijón afilado a modo de proyectil",
         "howToAvoid": "Observar la trayectoria lineal del aguijón y moverse fuera de ella",
         "notes": "El aguijón disparado se clava en el suelo; puede recuperarse como recurso del aguijón de avispa tras la pelea"
-      },
-      {
-        "name": "Zumbido intimidante",
-        "tags": [
-          "utility"
-        ],
-        "tell": "Vuela alrededor del jugador generando un fuerte zumbido continuo",
-        "howToAvoid": "Apartarse o atacarla para interrumpir el zumbido",
-        "notes": "El ruido dificulta apuntar y puede reducir la regeneración de aguante del jugador momentáneamente por distracción"
       }
     ]
   },
@@ -3214,7 +3205,7 @@
     "name": "Wasp Drone",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "muy_alta",
     "isBoss": false,
     "order": 48,
     "defaultGold": false,
@@ -3256,22 +3247,22 @@
     },
     "attacks": [
       {
-        "name": "Aguijonazo cargado",
+        "name": "Aguijonazo",
         "tags": [
           "melee"
         ],
-        "tell": "El avispón vuela en línea recta, cargando un ataque, luego embiste con su gran aguijón",
-        "howToAvoid": "Tratar como al de la avispa: esquivar en el último momento, pero tener en cuenta que es más rápido",
-        "notes": "Daño alto, puede aplicar un veneno más fuerte que la avispa común. Su velocidad de ataque es mayor al realizarlo"
+        "tell": "El avispón lanza un aguijon venenoso",
+        "howToAvoid": "Tratar como al de la avispa: esquivar en el último momento o hacer bloqueo perfecto",
+        "notes": "No ataca a cuerpo a cuerpo como la avispa normal. Inflije veneno medio"
       },
       {
-        "name": "Embestida con escudo",
+        "name": "Canto de bardo",
         "tags": [
           "melee"
         ],
-        "tell": "El avispón pone sus alas rígidas hacia adelante a modo de escudo y arremete",
-        "howToAvoid": "Bloquear el impacto con escudo para evitar ser derribado, o saltar a un lado",
-        "notes": "Este ataque reduce el daño recibido frontalmente, actuando él mismo a la vez de ataque y defensa"
+        "tell": "El dron vuela en circulos y emite un canto",
+        "howToAvoid": "No se puede bloquear, emite efectos positivos para sus aliados y negativos para el jugador",
+        "notes": "Este ataque puede aumentar la recuperación o vida de sus aliados y reducer el daño y recuperación del jugador. Priorizar eliminación"
       }
     ]
   },
@@ -3280,7 +3271,7 @@
     "name": "Assistant Manager",
     "game": "g1",
     "tier": 5,
-    "danger": "extrema",
+    "danger": "alta",
     "isBoss": true,
     "order": 49,
     "defaultGold": false,
@@ -3331,18 +3322,18 @@
         "tags": [
           "ranged"
         ],
-        "tell": "El Assistant Manager levanta su brazo y dispara tres rayos láser en rápida sucesión",
-        "howToAvoid": "Correr en zigzag o saltar entre disparos para que no alineen; bloquear si es imposible esquivar alguno",
-        "notes": "Cada rayo causa daño energético moderado; en fase 2 los dispara más rápido"
+        "tell": "El Assistant Manager levanta su brazo y activa tres rayos láser en rápida sucesión",
+        "howToAvoid": "Correr en zigzag o saltar entre láser para que no peguen; bloquear es imposible",
+        "notes": "Cada rayo causa daño energético moderado; en fase 2 los rota más rápido"
       },
       {
-        "name": "Campo de fuerza",
+        "name": "Campo electrico",
         "tags": [
           "utility"
         ],
-        "tell": "Proyecta un escudo energético esférico alrededor de sí mismo",
-        "howToAvoid": "No malgastar ataques mientras esté activo; centrarte en esquivar sus otros ataques hasta que el escudo caiga",
-        "notes": "Lo vuelve invulnerable momentáneamente y también daña/impulsa al jugador si intenta entrar en contacto con el campo"
+        "tell": "Activa 4 pilares de los cuales infligen daño electrico",
+        "howToAvoid": "Evitar hacercarse a estos pilares",
+        "notes": "Se activan en dos momentos durante la pelea"
       },
       {
         "name": "Invocación de refuerzos",
@@ -3358,9 +3349,9 @@
         "tags": [
           "melee"
         ],
-        "tell": "Si estás cerca, balancea su brazo electrificado hacia ti",
-        "howToAvoid": "Mantener distancia para forzarlo a ataques a distancia; si estás cerca, bloquear el golpe",
-        "notes": "Similar al ataque de un TAYZ.T pero con mayor daño. Puede aturdir si conecta"
+        "tell": "Genrea ondas electricas parecidas al ARC.R",
+        "howToAvoid": "Mantener distancia para poder ver la trayectoria del proyectil, esquivar caminando o hacerla rebotar con un escudo",
+        "notes": "Puede aturdir si conecta"
       }
     ]
   },
@@ -3369,7 +3360,7 @@
     "name": "Hedge Broodmother",
     "game": "g1",
     "tier": 5,
-    "danger": "extrema",
+    "danger": "alta",
     "isBoss": true,
     "order": 50,
     "defaultGold": false,
@@ -3435,8 +3426,8 @@
         "tags": [
           "melee"
         ],
-        "tell": "Desciende del techo y muerde inmediatamente al aterrizar",
-        "howToAvoid": "Bloquear tan pronto como toque el suelo, o alejarse mientras desciende",
+        "tell": "Desciende del techo y muerde despues de aterrizar",
+        "howToAvoid": "Atacar tan pronto como toque el suelo, o alejarse mientras desciende",
         "notes": "No se le puede hacer daño mientras baja del techo. Este mordisco inicial marca el comienzo de la pelea"
       },
       {
@@ -3491,7 +3482,7 @@
     "name": "Mant",
     "game": "g1",
     "tier": 5,
-    "danger": "extrema",
+    "danger": "imposible",
     "isBoss": true,
     "order": 51,
     "defaultGold": false,
@@ -3581,7 +3572,7 @@
     "name": "Mantis",
     "game": "g1",
     "tier": 5,
-    "danger": "extrema",
+    "danger": "imposible_alta",
     "isBoss": true,
     "order": 52,
     "defaultGold": false,
@@ -3665,7 +3656,7 @@
     "name": "Director Schmector",
     "game": "g1",
     "tier": 5,
-    "danger": "extrema",
+    "danger": "imposible",
     "isBoss": true,
     "order": 53,
     "defaultGold": false,
@@ -3755,7 +3746,7 @@
     "name": "Wasp Queen",
     "game": "g1",
     "tier": 5,
-    "danger": "extrema",
+    "danger": "muy_alta",
     "isBoss": true,
     "order": 54,
     "defaultGold": false,
@@ -3928,7 +3919,7 @@
     "name": "Koi Fish",
     "game": "g1",
     "tier": 5,
-    "danger": "extrema",
+    "danger": "alta",
     "isBoss": true,
     "order": 56,
     "defaultGold": true,
@@ -4278,7 +4269,7 @@
     "name": "Infected Ant",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "alta",
     "isBoss": false,
     "order": 72,
     "defaultGold": false,
@@ -4353,7 +4344,7 @@
     "name": "Infected Soldier Ant",
     "game": "g1",
     "tier": 3,
-    "danger": "media",
+    "danger": "muy_alta",
     "isBoss": false,
     "order": 73,
     "defaultGold": false,
@@ -4419,7 +4410,7 @@
     "name": "Infected Ant Queen",
     "game": "g1",
     "tier": 5,
-    "danger": "extrema",
+    "danger": "baja",
     "isBoss": true,
     "order": 74,
     "defaultGold": true,
@@ -4433,52 +4424,11 @@
     "resistances": [],
     "health": {
       "rating": 5,
-      "value": 2000
+      "value": null
     },
-    "elementalWeaknesses": [
-      {
-        "type": "fresh",
-        "bonusPct": 50
-      }
-    ],
-    "damageWeaknesses": [
-      {
-        "type": "busting",
-        "bonusPct": 25
-      }
-    ],
-    "weakPoint": {
-      "part": "back",
-      "susceptibleDamage": "any"
-    },
-    "attacks": [
-      {
-        "name": "Rugido corrosivo",
-        "tags": [
-          "utility"
-        ],
-        "tell": "Emite un rugido largo, esporas verdes fluyendo de su boca",
-        "howToAvoid": "Bloquear para reducir el efecto",
-        "notes": "Aplica un fuerte -Defensa al jugador, haciendo que reciba mucho más daño por un tiempo breve"
-      },
-      {
-        "name": "Mordisco triple real",
-        "tags": [
-          "melee"
-        ],
-        "tell": "Igual que una reina normal no ataca, pero infectada realiza tres mordidas lentas pero devastadoras",
-        "howToAvoid": "Alejarse, ya que bloquear todas tres es difícil sin quedar aturdido por el veneno acumulado",
-        "notes": "Cada mordida causa daño masivo y veneno; únicas ofensivas directas que realiza"
-      },
-      {
-        "name": "Sacudida de colmena",
-        "tags": [
-          "utility"
-        ],
-        "tell": "Agita violentamente su abdomen, liberando feromonas infectadas",
-        "howToAvoid": "N/A",
-        "notes": "Inmediatamente todas las hormigas infectadas cercanas se vuelven enloquecidas, ganando velocidad y daño extra al jugador"
-      }
-    ]
+    "elementalWeaknesses": [],
+    "weakPoint": {},
+    "attacks": []
   }
 ]
+
