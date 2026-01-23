@@ -4409,9 +4409,9 @@
     "id": "g1_infected_ant_queen",
     "name": "Infected Ant Queen",
     "game": "g1",
-    "tier": 5,
+    "tier": 3,
     "danger": "baja",
-    "isBoss": true,
+    "isBoss": false,
     "order": 74,
     "defaultGold": true,
     "cardNormal": "assets/g1/creatures/cards/gold/Creaturecardgold_Infected_Ant_Queen.webp",
@@ -4431,4 +4431,3 @@
     "attacks": []
   }
 ]
-
