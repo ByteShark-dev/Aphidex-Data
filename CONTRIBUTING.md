@@ -17,7 +17,7 @@
 
 ## Allowed IDs / IDs permitidos
 **Damage types / Daños:**
-- `slashing`, `chopping`, `busting`, `stabbing`, `explosive`, `generic`
+- `slashing`, `chopping`, `busting`, `stabbing`, `explosive`, `generic`, `dust`
 
 **Elementals / Elementales:**
 - `fresh`, `spicy`, `salty`, `sour`
@@ -29,7 +29,14 @@
 - `back`, `eyes`, `gut`, `legs`, `rump`
 
 **Susceptible damage (v2):**
-- `any`, `stabbing_arrows_only`, or any damage ID above.
+- `any`, `stabbing_arrows_only`, `stabbing`, `chopping_and_slashing`, or any damage ID above.
+
+**Weak point + susceptible damage rules / Reglas de punto débil + daño susceptible:**
+- `back`: `any`
+- `eyes`: `stabbing_arrows_only`
+- `gut`: `stabbing`
+- `legs`: `chopping_and_slashing`
+- `rump`: `any`
 
 ## File locations / Ubicación de archivos
 - Grounded 1 data: `data/grounded1/enemies_g1.json`

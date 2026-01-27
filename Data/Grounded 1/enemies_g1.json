@@ -136,8 +136,9 @@
     "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Ladybug.webp",
     "photo": "assets/g1/creatures/photos/Ladybug.webp",
     "weaknesses": [
+      "fresh",
       "busting",
-      "fresh"
+      "generic"
     ],
     "resistances": [
       "salty",
@@ -158,6 +159,10 @@
       {
         "type": "busting",
         "bonusPct": 50
+      },
+      {
+        "type": "generic",
+        "bonusPct": 25
       }
     ],
     "resistancesV2": [
@@ -176,7 +181,7 @@
     ],
     "weakPoint": {
       "part": "legs",
-      "susceptibleDamage": "slashing"
+      "susceptibleDamage": "chopping_and_slashing"
     },
     "attacks": [
       {
@@ -239,12 +244,13 @@
     "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Bee.webp",
     "photo": "assets/g1/creatures/photos/Bee.webp",
     "weaknesses": [
-      "salty",
+      "fresh",
+      "chopping",
       "slashing"
     ],
     "resistances": [
       "busting",
-      "spicy"
+      "generic"
     ],
     "health": {
       "rating": 2,
@@ -252,11 +258,15 @@
     },
     "elementalWeaknesses": [
       {
-        "type": "salty",
-        "bonusPct": 50
+        "type": "fresh",
+        "bonusPct": 25
       }
     ],
     "damageWeaknesses": [
+      {
+        "type": "chopping",
+        "bonusPct": 25
+      },
       {
         "type": "slashing",
         "bonusPct": 25
@@ -264,11 +274,11 @@
     ],
     "resistancesV2": [
       {
-        "type": "spicy",
+        "type": "busting",
         "bonusPct": 25
       },
       {
-        "type": "busting",
+        "type": "generic",
         "bonusPct": 25
       }
     ],
@@ -310,37 +320,31 @@
     "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Firefly.webp",
     "photo": "assets/g1/creatures/photos/Firefly.webp",
     "weaknesses": [
-      "busting",
-      "spicy"
+      "stabbing"
     ],
     "resistances": [
-      "salty",
-      "slashing"
+      "spicy",
+      "generic"
     ],
     "health": {
       "rating": 2,
       "value": 180
     },
-    "elementalWeaknesses": [
-      {
-        "type": "spicy",
-        "bonusPct": 50
-      }
-    ],
+    "elementalWeaknesses": [],
     "damageWeaknesses": [
       {
-        "type": "busting",
-        "bonusPct": 25
+        "type": "stabbing",
+        "bonusPct": 50
       }
     ],
     "resistancesV2": [
       {
-        "type": "salty",
-        "bonusPct": 25
+        "type": "spicy",
+        "bonusPct": 50
       },
       {
-        "type": "slashing",
-        "bonusPct": 25
+        "type": "generic",
+        "bonusPct": 50
       }
     ],
     "weakPoint": {
@@ -381,12 +385,16 @@
     "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Sickly_Roly_Poly.webp",
     "photo": "assets/g1/creatures/photos/Sickly_Roly_Poly.webp",
     "weaknesses": [
-      "salty",
-      "slashing"
+      "spicy",
+      "busting",
+      "generic"
     ],
     "resistances": [
-      "busting",
-      "fresh"
+      "fresh",
+      "salty",
+      "chopping",
+      "slashing",
+      "stabbing"
     ],
     "health": {
       "rating": 3,
@@ -394,13 +402,17 @@
     },
     "elementalWeaknesses": [
       {
-        "type": "salty",
-        "bonusPct": 50
+        "type": "spicy",
+        "bonusPct": 25
       }
     ],
     "damageWeaknesses": [
       {
-        "type": "slashing",
+        "type": "busting",
+        "bonusPct": 50
+      },
+      {
+        "type": "generic",
         "bonusPct": 25
       }
     ],
@@ -410,13 +422,25 @@
         "bonusPct": 25
       },
       {
-        "type": "busting",
+        "type": "salty",
+        "bonusPct": 25
+      },
+      {
+        "type": "chopping",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      },
+      {
+        "type": "stabbing",
         "bonusPct": 50
       }
     ],
     "weakPoint": {
-      "part": "gut",
-      "susceptibleDamage": "stabbing"
+      "part": "legs",
+      "susceptibleDamage": "chopping_and_slashing"
     },
     "attacks": [
       {
@@ -461,12 +485,15 @@
     "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Roly_Poly.webp",
     "photo": "assets/g1/creatures/photos/Roly_Poly.webp",
     "weaknesses": [
+      "fresh",
       "salty",
-      "slashing"
+      "spicy",
+      "busting"
     ],
     "resistances": [
-      "busting",
-      "fresh"
+      "chopping",
+      "slashing",
+      "stabbing"
     ],
     "health": {
       "rating": 4,
@@ -474,29 +501,41 @@
     },
     "elementalWeaknesses": [
       {
-        "type": "salty",
-        "bonusPct": 50
-      }
-    ],
-    "damageWeaknesses": [
-      {
-        "type": "slashing",
-        "bonusPct": 25
-      }
-    ],
-    "resistancesV2": [
-      {
         "type": "fresh",
         "bonusPct": 25
       },
+      {
+        "type": "salty",
+        "bonusPct": 25
+      },
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "damageWeaknesses": [
       {
         "type": "busting",
         "bonusPct": 50
       }
     ],
+    "resistancesV2": [
+      {
+        "type": "chopping",
+        "bonusPct": 25
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 25
+      },
+      {
+        "type": "stabbing",
+        "bonusPct": 50
+      }
+    ],
     "weakPoint": {
-      "part": "gut",
-      "susceptibleDamage": "stabbing"
+      "part": "legs",
+      "susceptibleDamage": "chopping_and_slashing"
     },
     "attacks": [
       {
@@ -541,12 +580,16 @@
     "cardGold": "assets/g1/creatures/cards/gold/Creaturecardgold_Moth.webp",
     "photo": "assets/g1/creatures/photos/Moth.webp",
     "weaknesses": [
-      "busting",
+      "fresh",
+      "sour",
       "spicy"
     ],
     "resistances": [
       "salty",
-      "slashing"
+      "busting",
+      "generic",
+      "slashing",
+      "dust"
     ],
     "health": {
       "rating": 3,
@@ -554,24 +597,39 @@
     },
     "elementalWeaknesses": [
       {
-        "type": "spicy",
-        "bonusPct": 50
-      }
-    ],
-    "damageWeaknesses": [
-      {
-        "type": "busting",
-        "bonusPct": 25
-      }
-    ],
-    "resistancesV2": [
-      {
-        "type": "salty",
+        "type": "fresh",
         "bonusPct": 25
       },
       {
-        "type": "slashing",
+        "type": "sour",
         "bonusPct": 25
+      },
+      {
+        "type": "spicy",
+        "bonusPct": 25
+      }
+    ],
+    "damageWeaknesses": [],
+    "resistancesV2": [
+      {
+        "type": "salty",
+        "bonusPct": 50
+      },
+      {
+        "type": "busting",
+        "bonusPct": 50
+      },
+      {
+        "type": "generic",
+        "bonusPct": 50
+      },
+      {
+        "type": "slashing",
+        "bonusPct": 50
+      },
+      {
+        "type": "dust",
+        "bonusPct": 100
       }
     ],
     "weakPoint": {
