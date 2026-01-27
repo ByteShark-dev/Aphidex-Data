@@ -17,7 +17,7 @@
 
 ## Allowed IDs / IDs permitidos
 **Damage types / Daños:**
-- `slashing`, `chopping`, `busting`, `stabbing`, `explosive`
+- `slashing`, `chopping`, `busting`, `stabbing`, `explosive`, `generic`
 
 **Elementals / Elementales:**
 - `fresh`, `spicy`, `salty`, `sour`
