@@ -1,5 +1,6 @@
 # Aphidex-Data
-
+> This repository is part of the Aphidex system  
+> Main project: https://github.com/ByteShark-dev/aphidex
 **EN:** Community-driven data files for the Aphidex app (offline updates via Google Play).  
 **ES:** Archivos de datos comunitarios para la app Aphidex (actualizaciones offline vía Google Play).
 
